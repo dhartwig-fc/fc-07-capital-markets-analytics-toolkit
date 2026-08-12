@@ -1,0 +1,108 @@
+{
+  "schema_name": "cm009_benchmark_manipulation_schema",
+  "version": "1.0",
+  "pattern_id": "CM009",
+  "description": "Machine-readable schema for the CM009 Benchmark Manipulation analytics workflow.",
+  "datasets": {
+    "fixing_orders": {
+      "file": "fixing_orders.csv",
+      "primary_key": "account_ref",
+      "fields": {
+        "trader_name": "string",
+        "account_ref": "string",
+        "benchmark_name": "string",
+        "fixing_window_volume": "number",
+        "total_daily_volume": "number",
+        "fixing_price_deviation_pct": "number",
+        "normal_deviation_pct": "number",
+        "seconds_before_fixing_close": "integer",
+        "repeat_occurrences": "integer",
+        "issuer_name": "string"
+      },
+      "required": [
+        "trader_name",
+        "account_ref",
+        "benchmark_name",
+        "fixing_window_volume",
+        "total_daily_volume",
+        "fixing_price_deviation_pct",
+        "normal_deviation_pct",
+        "seconds_before_fixing_close",
+        "repeat_occurrences",
+        "issuer_name"
+      ]
+    },
+    "benchmarks": {
+      "file": "benchmarks.csv",
+      "primary_key": "account_ref",
+      "fields": {
+        "benchmark_name": "string",
+        "account_ref": "string",
+        "administrator": "string",
+        "jurisdiction": "string",
+        "prior_alerts": "integer"
+      },
+      "required": [
+        "benchmark_name",
+        "account_ref",
+        "administrator",
+        "jurisdiction",
+        "prior_alerts"
+      ]
+    }
+  },
+  "components": {
+    "fixing_window_concentration": {
+      "weight": 0.35
+    },
+    "price_distortion": {
+      "weight": 0.25
+    },
+    "order_timing_precision": {
+      "weight": 0.20
+    },
+    "repeat_pattern": {
+      "weight": 0.20
+    }
+  },
+  "band_scores": {
+    "Low": 15,
+    "Medium": 45,
+    "High": 70,
+    "Critical": 90
+  },
+  "thresholds": {
+    "alert_threshold": 80
+  },
+  "risk_bands": {
+    "low": {
+      "min": 0,
+      "max": 29
+    },
+    "medium": {
+      "min": 30,
+      "max": 59
+    },
+    "high": {
+      "min": 60,
+      "max": 79
+    },
+    "critical": {
+      "min": 80,
+      "max": 100
+    }
+  },
+  "derived_fields": {
+    "fixing_window_concentration_ratio": "fixing_window_volume / total_daily_volume",
+    "price_distortion_ratio": "fixing_price_deviation_pct / normal_deviation_pct",
+    "exposure_score": "weighted sum of the four component band-midpoint scores"
+  },
+  "outputs": {
+    "cm009_exposure_scores": {
+      "file": "cm009_exposure_scores.csv"
+    },
+    "cm009_benchmark_manipulation_alerts": {
+      "file": "cm009_benchmark_manipulation_alerts.csv"
+    }
+  }
+}
