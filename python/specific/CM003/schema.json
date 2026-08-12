@@ -1,0 +1,111 @@
+{
+  "schema_name": "cm003_spoofing_schema",
+  "version": "1.0",
+  "pattern_id": "CM003",
+  "description": "Machine-readable schema for the CM003 Spoofing analytics workflow.",
+  "datasets": {
+    "orders": {
+      "file": "orders.csv",
+      "primary_key": "account_ref",
+      "fields": {
+        "trader_name": "string",
+        "account_ref": "string",
+        "instrument": "string",
+        "total_order_value": "number",
+        "spoof_order_value": "number",
+        "avg_cancel_seconds": "number",
+        "spoof_side_depth": "number",
+        "genuine_side_depth": "number",
+        "opposite_side_filled_value": "number",
+        "broker_name": "string"
+      },
+      "required": [
+        "trader_name",
+        "account_ref",
+        "instrument",
+        "total_order_value",
+        "spoof_order_value",
+        "avg_cancel_seconds",
+        "spoof_side_depth",
+        "genuine_side_depth",
+        "opposite_side_filled_value",
+        "broker_name"
+      ]
+    },
+    "brokers": {
+      "file": "brokers.csv",
+      "primary_key": "account_ref",
+      "fields": {
+        "broker_name": "string",
+        "account_ref": "string",
+        "venue": "string",
+        "jurisdiction": "string",
+        "relationship": "string",
+        "prior_alerts": "integer"
+      },
+      "required": [
+        "broker_name",
+        "account_ref",
+        "venue",
+        "jurisdiction",
+        "relationship",
+        "prior_alerts"
+      ]
+    }
+  },
+  "components": {
+    "non_bona_fide_order_ratio": {
+      "weight": 0.35
+    },
+    "cancellation_speed": {
+      "weight": 0.25
+    },
+    "order_book_imbalance_created": {
+      "weight": 0.20
+    },
+    "opposite_side_execution": {
+      "weight": 0.20
+    }
+  },
+  "band_scores": {
+    "Low": 15,
+    "Medium": 45,
+    "High": 70,
+    "Critical": 90
+  },
+  "thresholds": {
+    "alert_threshold": 80
+  },
+  "risk_bands": {
+    "low": {
+      "min": 0,
+      "max": 29
+    },
+    "medium": {
+      "min": 30,
+      "max": 59
+    },
+    "high": {
+      "min": 60,
+      "max": 79
+    },
+    "critical": {
+      "min": 80,
+      "max": 100
+    }
+  },
+  "derived_fields": {
+    "non_bona_fide_order_ratio": "spoof_order_value / total_order_value",
+    "order_book_imbalance_ratio": "spoof_side_depth / (spoof_side_depth + genuine_side_depth)",
+    "opposite_side_execution_ratio": "opposite_side_filled_value / spoof_order_value",
+    "exposure_score": "weighted sum of the four component band-midpoint scores"
+  },
+  "outputs": {
+    "cm003_exposure_scores": {
+      "file": "cm003_exposure_scores.csv"
+    },
+    "cm003_spoofing_alerts": {
+      "file": "cm003_spoofing_alerts.csv"
+    }
+  }
+}
