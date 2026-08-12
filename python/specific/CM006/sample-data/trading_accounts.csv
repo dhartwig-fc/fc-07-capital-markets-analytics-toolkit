@@ -1,0 +1,23 @@
+trader_name,account_ref,desk,instrument,seconds_ahead_of_client_order,correlation_pct,realized_pnl,position_value,contact_events_90d,client_firm_name
+Marta Kowalski,ACC001,Agency Execution Desk,Gamma Imports Ltd Ordinary Shares,180,15,96000,1200000,0,Gamma Imports Ltd
+Julian Ostrowski,ACC002,Program Trading Desk,Zeta Commodities Ltd Ordinary Shares,250,22,180000,1500000,3,Zeta Commodities Ltd
+Fatima Zahra,ACC003,Cash Equities Desk,Continental Correspondent Bank Ordinary Shares,320,30,540000,1800000,1,Continental Correspondent Bank
+Erik Solheim,ACC004,Electronic Trading Desk,Ravenwood Trading Co Ordinary Shares,395,50,144000,900000,2,Ravenwood Trading Co
+Naledi Dlamini,ACC005,Equity Derivatives Desk,Falcon Ridge Commodities Ltd Ordinary Shares,100,12,120000,2000000,0,Falcon Ridge Commodities Ltd
+Andrei Popescu,ACC006,Block Trading Desk,Highgate Commodities Ltd Ordinary Shares,210,35,385000,1100000,4,Highgate Commodities Ltd
+Yuki Tanaka,ACC007,Algorithmic Execution Desk,Northwind Freight Co Ordinary Shares,90,55,475000,2500000,1,Northwind Freight Co
+Sofia Almeida,ACC008,Institutional Sales Trading Desk,Meridian Bulk Traders Ltd Ordinary Shares,75,60,680000,1700000,2,Meridian Bulk Traders Ltd
+Callum Fraser,ACC009,Agency Execution Desk,Gamma Imports Ltd Ordinary Shares,60,48,704000,2200000,5,Gamma Imports Ltd
+Ines Duarte,ACC010,Program Trading Desk,Zeta Commodities Ltd Ordinary Shares,45,58,960000,1600000,0,Zeta Commodities Ltd
+Rajiv Menon,ACC011,Cash Equities Desk,Continental Correspondent Bank Ordinary Shares,25,18,784000,2800000,3,Continental Correspondent Bank
+Greta Lindqvist,ACC012,Electronic Trading Desk,Ravenwood Trading Co Ordinary Shares,55,70,572000,1300000,1,Ravenwood Trading Co
+Marco Bellini,ACC013,Equity Derivatives Desk,Falcon Ridge Commodities Ltd Ordinary Shares,4,90,210000,2100000,2,Falcon Ridge Commodities Ltd
+Chidi Okafor,ACC014,Block Trading Desk,Highgate Commodities Ltd Ordinary Shares,3,75,722000,1900000,0,Highgate Commodities Ltd
+Freya Nilsen,ACC015,Algorithmic Execution Desk,Northwind Freight Co Ordinary Shares,18,80,1632000,2400000,4,Northwind Freight Co
+Dimitri Volkov,ACC016,Institutional Sales Trading Desk,Meridian Bulk Traders Ltd Ordinary Shares,2,95,420000,1000000,1,Meridian Bulk Traders Ltd
+Isabela Cruz,ACC017,Agency Execution Desk,Gamma Imports Ltd Ordinary Shares,12,72,2210000,2600000,5,Gamma Imports Ltd
+Owen Fitzgerald,ACC018,Program Trading Desk,Zeta Commodities Ltd Ordinary Shares,4,78,2160000,3000000,3,Zeta Commodities Ltd
+Vanessa Cole,ACC019,Agency Execution Desk,Alpha Trading Ltd Ordinary Shares,1,96,2184000,2400000,13,Alpha Trading Ltd
+Haruto Ishikawa,ACC020,Cash Equities Desk,Continental Correspondent Bank Ordinary Shares,3,82,1540000,1750000,7,Continental Correspondent Bank
+Lena Fischer,ACC021,Electronic Trading Desk,Ravenwood Trading Co Ordinary Shares,9,92,1900000,2000000,11,Ravenwood Trading Co
+Tariq Hassan,ACC022,Equity Derivatives Desk,Falcon Ridge Commodities Ltd Ordinary Shares,2,68,1245000,1500000,14,Falcon Ridge Commodities Ltd

@@ -1,0 +1,23 @@
+client_firm_name,account_ref,jurisdiction,relationship,prior_alerts
+Gamma Imports Ltd,ACC001,Marshall Islands,Institutional agency client,0
+Zeta Commodities Ltd,ACC002,Cyprus,Buy-side asset manager,0
+Continental Correspondent Bank,ACC003,Sweden,Corporate treasury client,0
+Ravenwood Trading Co,ACC004,Panama,Hedge fund client,0
+Falcon Ridge Commodities Ltd,ACC005,Malta,Pension fund client,0
+Highgate Commodities Ltd,ACC006,British Virgin Islands,Sovereign wealth client,1
+Northwind Freight Co,ACC007,Germany,Institutional agency client,0
+Meridian Bulk Traders Ltd,ACC008,Singapore,Family office client,1
+Gamma Imports Ltd,ACC009,Marshall Islands,Buy-side asset manager,1
+Zeta Commodities Ltd,ACC010,Cyprus,Corporate treasury client,1
+Continental Correspondent Bank,ACC011,Sweden,Hedge fund client,1
+Ravenwood Trading Co,ACC012,Panama,Pension fund client,1
+Falcon Ridge Commodities Ltd,ACC013,Malta,Sovereign wealth client,1
+Highgate Commodities Ltd,ACC014,British Virgin Islands,Family office client,2
+Northwind Freight Co,ACC015,Germany,Institutional agency client,2
+Meridian Bulk Traders Ltd,ACC016,Singapore,Buy-side asset manager,2
+Gamma Imports Ltd,ACC017,Marshall Islands,Corporate treasury client,2
+Zeta Commodities Ltd,ACC018,Cyprus,Hedge fund client,2
+Alpha Trading Ltd,ACC019,United Kingdom,Institutional agency client,3
+Continental Correspondent Bank,ACC020,Sweden,Pension fund client,3
+Ravenwood Trading Co,ACC021,Panama,Sovereign wealth client,3
+Falcon Ridge Commodities Ltd,ACC022,Malta,Family office client,3
