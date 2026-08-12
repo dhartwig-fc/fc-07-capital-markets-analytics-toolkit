@@ -1,0 +1,23 @@
+trader_name,account_ref,instrument,distinct_price_levels,orders_placed,orders_executed,imbalance_ratio,seconds_to_reversal,venue_operator_name
+Marta Kowalska,ACC001,Falcon Ridge Commodities Ltd Ordinary Shares,1,28,14,0.03,180,Northwind Freight Co
+Diego Fernandez,ACC002,Highgate Commodities Ltd Ordinary Shares,2,33,11,0.05,45,Highgate Commodities Ltd
+Anneke van der Berg,ACC003,Meridian Bulk Traders Ltd Front-Month Future,1,40,16,0.15,150,Continental Correspondent Bank
+Samuel Osei,ACC004,Northwind Freight Co Ordinary Shares,2,72,9,0.04,120,Ravenwood Trading Co
+Ines Petrova,ACC005,Ravenwood Trading Co Ordinary Shares,3,39,13,0.06,100,Alpha Trading Ltd
+Callum Ferguson,ACC006,Alpha Trading Ltd Ordinary Shares,1,38,19,0.2,40,Zeta Commodities Ltd
+Yuki Nakamura,ACC007,Zeta Commodities Ltd Front-Month Future,4,70,7,0.08,90,Meridian Bulk Traders Ltd
+Fatima Al-Sayed,ACC008,Falcon Ridge Commodities Ltd 4.25% 2028 Bond,3,72,6,0.18,110,Falcon Ridge Commodities Ltd
+Piotr Nowicki,ACC009,Highgate Commodities Ltd Front-Month Future,4,99,11,0.22,35,Northwind Freight Co
+Isabela Rocha,ACC010,Meridian Bulk Traders Ltd Ordinary Shares,3,105,15,0.4,95,Highgate Commodities Ltd
+Magnus Eriksson,ACC011,Northwind Freight Co Front-Month Future,6,66,22,0.25,50,Ravenwood Trading Co
+Chidi Okafor,ACC012,Ravenwood Trading Co Ordinary Shares,4,160,8,0.24,140,Alpha Trading Ltd
+Naomi Bergstrom,ACC013,Alpha Trading Ltd Front-Month Future,9,350,7,0.07,130,Zeta Commodities Ltd
+Lars Andersen,ACC014,Zeta Commodities Ltd Ordinary Shares,10,225,9,0.26,160,Meridian Bulk Traders Ltd
+Katarina Novak,ACC015,Falcon Ridge Commodities Ltd Ordinary Shares,6,220,10,0.45,30,Falcon Ridge Commodities Ltd
+Ahmed Farouk,ACC016,Highgate Commodities Ltd 3.75% 2027 Bond,11,440,8,0.14,170,Northwind Freight Co
+Sophie Laurent,ACC017,Meridian Bulk Traders Ltd Front-Month Future,5,216,12,0.7,28,Continental Correspondent Bank
+Tobias Richter,ACC018,Northwind Freight Co Ordinary Shares,12,270,9,0.35,55,Highgate Commodities Ltd
+Renata Silva,ACC019,Gamma Imports Ltd 4.5% 2029 Conv Bond,10,300,5,0.75,3,Gamma Imports Ltd
+Henrik Solvang,ACC020,Zeta Commodities Ltd Front-Month Future,13,352,11,0.8,12,Ravenwood Trading Co
+Grace Mbeki,ACC021,Ravenwood Trading Co Front-Month Future,7,280,4,0.65,2,Continental Correspondent Bank
+Dmitri Volkov,ACC022,Alpha Trading Ltd Ordinary Shares,14,280,8,0.85,4,Alpha Trading Ltd
