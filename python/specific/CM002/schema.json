@@ -1,0 +1,110 @@
+{
+  "schema_name": "cm002_market_manipulation_schema",
+  "version": "1.0",
+  "pattern_id": "CM002",
+  "description": "Machine-readable schema for the CM002 Market Manipulation analytics workflow.",
+  "datasets": {
+    "trading_accounts": {
+      "file": "trading_accounts.csv",
+      "primary_key": "account_ref",
+      "fields": {
+        "account_holder_name": "string",
+        "account_ref": "string",
+        "desk": "string",
+        "instrument": "string",
+        "normal_volatility_pct": "number",
+        "price_move_pct": "number",
+        "pct_of_market_volume": "integer",
+        "linked_accounts_count": "integer",
+        "post_period_reversal_pct": "number",
+        "ultimate_owner_name": "string"
+      },
+      "required": [
+        "account_holder_name",
+        "account_ref",
+        "desk",
+        "instrument",
+        "normal_volatility_pct",
+        "price_move_pct",
+        "pct_of_market_volume",
+        "linked_accounts_count",
+        "post_period_reversal_pct",
+        "ultimate_owner_name"
+      ]
+    },
+    "counterparties": {
+      "file": "counterparties.csv",
+      "primary_key": "account_ref",
+      "fields": {
+        "ultimate_owner_name": "string",
+        "account_ref": "string",
+        "venue": "string",
+        "jurisdiction": "string",
+        "relationship": "string",
+        "prior_alerts": "integer"
+      },
+      "required": [
+        "ultimate_owner_name",
+        "account_ref",
+        "venue",
+        "jurisdiction",
+        "relationship",
+        "prior_alerts"
+      ]
+    }
+  },
+  "components": {
+    "price_impact_ratio": {
+      "weight": 0.35
+    },
+    "volume_concentration": {
+      "weight": 0.25
+    },
+    "coordinated_accounts": {
+      "weight": 0.20
+    },
+    "reversal_after_close": {
+      "weight": 0.20
+    }
+  },
+  "band_scores": {
+    "Low": 15,
+    "Medium": 45,
+    "High": 70,
+    "Critical": 90
+  },
+  "thresholds": {
+    "alert_threshold": 80
+  },
+  "risk_bands": {
+    "low": {
+      "min": 0,
+      "max": 29
+    },
+    "medium": {
+      "min": 30,
+      "max": 59
+    },
+    "high": {
+      "min": 60,
+      "max": 79
+    },
+    "critical": {
+      "min": 80,
+      "max": 100
+    }
+  },
+  "derived_fields": {
+    "price_impact_ratio": "price_move_pct / normal_volatility_pct",
+    "reversal_after_close_ratio": "post_period_reversal_pct / price_move_pct",
+    "exposure_score": "weighted sum of the four component band-midpoint scores"
+  },
+  "outputs": {
+    "cm002_exposure_scores": {
+      "file": "cm002_exposure_scores.csv"
+    },
+    "cm002_market_manipulation_alerts": {
+      "file": "cm002_market_manipulation_alerts.csv"
+    }
+  }
+}
