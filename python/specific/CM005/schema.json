@@ -1,0 +1,108 @@
+{
+  "schema_name": "cm005_wash_trading_schema",
+  "version": "1.0",
+  "pattern_id": "CM005",
+  "description": "Machine-readable schema for the CM005 Wash Trading analytics workflow.",
+  "datasets": {
+    "trades": {
+      "file": "trades.csv",
+      "primary_key": "account_ref",
+      "fields": {
+        "trader_name": "string",
+        "account_ref": "string",
+        "instrument": "string",
+        "self_matched_volume": "number",
+        "total_volume": "number",
+        "overlap_score": "integer",
+        "reported_volume": "number",
+        "genuine_economic_volume": "number",
+        "distinct_counterparties": "integer",
+        "clearing_broker_name": "string"
+      },
+      "required": [
+        "trader_name",
+        "account_ref",
+        "instrument",
+        "self_matched_volume",
+        "total_volume",
+        "overlap_score",
+        "reported_volume",
+        "genuine_economic_volume",
+        "distinct_counterparties",
+        "clearing_broker_name"
+      ]
+    },
+    "counterparties": {
+      "file": "counterparties.csv",
+      "primary_key": "account_ref",
+      "fields": {
+        "clearing_broker_name": "string",
+        "account_ref": "string",
+        "jurisdiction": "string",
+        "relationship": "string",
+        "prior_alerts": "integer"
+      },
+      "required": [
+        "clearing_broker_name",
+        "account_ref",
+        "jurisdiction",
+        "relationship",
+        "prior_alerts"
+      ]
+    }
+  },
+  "components": {
+    "self_match_ratio": {
+      "weight": 0.35
+    },
+    "beneficial_ownership_overlap": {
+      "weight": 0.25
+    },
+    "volume_inflation": {
+      "weight": 0.20
+    },
+    "counterparty_concentration": {
+      "weight": 0.20
+    }
+  },
+  "band_scores": {
+    "Low": 15,
+    "Medium": 45,
+    "High": 70,
+    "Critical": 90
+  },
+  "thresholds": {
+    "alert_threshold": 80
+  },
+  "risk_bands": {
+    "low": {
+      "min": 0,
+      "max": 29
+    },
+    "medium": {
+      "min": 30,
+      "max": 59
+    },
+    "high": {
+      "min": 60,
+      "max": 79
+    },
+    "critical": {
+      "min": 80,
+      "max": 100
+    }
+  },
+  "derived_fields": {
+    "self_match_ratio_pct": "self_matched_volume / total_volume",
+    "volume_inflation_ratio": "reported_volume / genuine_economic_volume",
+    "exposure_score": "weighted sum of the four component band-midpoint scores"
+  },
+  "outputs": {
+    "cm005_exposure_scores": {
+      "file": "cm005_exposure_scores.csv"
+    },
+    "cm005_wash_trading_alerts": {
+      "file": "cm005_wash_trading_alerts.csv"
+    }
+  }
+}
