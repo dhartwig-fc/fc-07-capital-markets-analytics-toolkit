@@ -1,0 +1,23 @@
+trader_name,account_ref,instrument,cancelled_orders,total_orders,orders_per_second,price_move_after_burst_pct,normal_move_pct,avg_order_size,normal_order_size,venue_operator_name
+Freya Nielsen,ACC001,Vantage Semiconductors Ordinary Shares,48,1200,2,0.36,0.4,1100,1000,Continental Correspondent Bank
+Matteo Rossi,ACC002,FTSE 100 Index Futures,70,1400,3,0.35,0.35,1260,900,Northwind Freight Co
+Aisling Murphy,ACC003,Brent Crude Oil Futures,90,1500,4,0.54,0.3,1265,1100,Ravenwood Trading Co
+Dmitri Volkov,ACC004,EUR/USD Spot FX,91,1300,9,0.44,0.4,1260,1200,Highgate Commodities Ltd
+Sana Malik,ACC005,Meridian Bulk Traders Ltd Ordinary Shares,240,1600,5,0.6,0.5,960,800,Meridian Bulk Traders Ltd
+Callum Stewart,ACC006,S&P 500 E-mini Futures,100,1250,1,0.7,0.35,1500,1000,Falcon Ridge Commodities Ltd
+Isabela Costa,ACC007,Highgate Commodities Ltd Ordinary Shares,252,1800,11,0.34,0.4,1404,1300,Zeta Commodities Ltd
+Rurik Petrov,ACC008,10-Year Gilt Futures,360,2000,8,0.66,0.3,1062,900,Gamma Imports Ltd
+Naledi Dlamini,ACC009,Northwind Freight Co Ordinary Shares,418,1900,13,1.0,0.4,1600,1000,Continental Correspondent Bank
+Yusuf Demir,ACC010,Gold Spot (XAU/USD),525,2100,10,1.05,0.3,1232,1100,Northwind Freight Co
+Ingrid Halvorsen,ACC011,Falcon Ridge Commodities Ltd Ordinary Shares,770,2200,3,0.86,0.45,1233,850,Ravenwood Trading Co
+Javier Morales,ACC012,DAX 40 Index Futures,400,2000,22,0.81,0.35,1159,950,Highgate Commodities Ltd
+Petra Novak,ACC013,Ravenwood Trading Co Ordinary Shares,1560,2400,50,0.5,0.5,1284,1200,Meridian Bulk Traders Ltd
+Kwame Asante,ACC014,USD/JPY Spot FX,1750,2500,28,0.84,0.4,1000,800,Falcon Ridge Commodities Ltd
+Lena Fischer,ACC015,Zeta Commodities Ltd Ordinary Shares,1040,2600,20,1.2,0.3,1485,900,Zeta Commodities Ltd
+Arjun Mehta,ACC016,Natural Gas Futures,2100,2800,60,0.77,0.45,1526,1400,Gamma Imports Ltd
+Chloe Bennett,ACC017,Continental Correspondent Bank Ordinary Shares,1215,2700,35,2.1,0.3,1550,1000,Continental Correspondent Bank
+Farid Haidari,ACC018,Nikkei 225 Index Futures,2400,3000,30,1.75,0.35,1445,850,Northwind Freight Co
+Dominic Farrow,ACC019,Alpha Trading Ltd Ordinary Shares,2720,3200,70,2.4,0.3,4000,1000,Alpha Trading Ltd
+Simone Beaumont,ACC020,Copper Futures,3150,3500,25,3.0,0.4,1980,900,Ravenwood Trading Co
+Tariq Hassan,ACC021,Gamma Imports Ltd Ordinary Shares,1450,2900,55,2.38,0.35,3500,1000,Highgate Commodities Ltd
+Noor Abbasi,ACC022,GBP/USD Spot FX,2108,3100,32,2.7,0.3,3600,800,Meridian Bulk Traders Ltd
