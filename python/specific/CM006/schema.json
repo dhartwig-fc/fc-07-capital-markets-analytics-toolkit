@@ -1,0 +1,107 @@
+{
+  "schema_name": "cm006_front_running_schema",
+  "version": "1.0",
+  "pattern_id": "CM006",
+  "description": "Machine-readable schema for the CM006 Front Running analytics workflow.",
+  "datasets": {
+    "trading_accounts": {
+      "file": "trading_accounts.csv",
+      "primary_key": "account_ref",
+      "fields": {
+        "trader_name": "string",
+        "account_ref": "string",
+        "desk": "string",
+        "instrument": "string",
+        "seconds_ahead_of_client_order": "number",
+        "correlation_pct": "integer",
+        "realized_pnl": "number",
+        "position_value": "number",
+        "contact_events_90d": "integer",
+        "client_firm_name": "string"
+      },
+      "required": [
+        "trader_name",
+        "account_ref",
+        "desk",
+        "instrument",
+        "seconds_ahead_of_client_order",
+        "correlation_pct",
+        "realized_pnl",
+        "position_value",
+        "contact_events_90d",
+        "client_firm_name"
+      ]
+    },
+    "client_orders": {
+      "file": "client_orders.csv",
+      "primary_key": "account_ref",
+      "fields": {
+        "client_firm_name": "string",
+        "account_ref": "string",
+        "jurisdiction": "string",
+        "relationship": "string",
+        "prior_alerts": "integer"
+      },
+      "required": [
+        "client_firm_name",
+        "account_ref",
+        "jurisdiction",
+        "relationship",
+        "prior_alerts"
+      ]
+    }
+  },
+  "components": {
+    "timing_ahead_of_client_order": {
+      "weight": 0.35
+    },
+    "position_correlation": {
+      "weight": 0.25
+    },
+    "profit_capture": {
+      "weight": 0.20
+    },
+    "client_order_knowledge_linkage": {
+      "weight": 0.20
+    }
+  },
+  "band_scores": {
+    "Low": 15,
+    "Medium": 45,
+    "High": 70,
+    "Critical": 90
+  },
+  "thresholds": {
+    "alert_threshold": 80
+  },
+  "risk_bands": {
+    "low": {
+      "min": 0,
+      "max": 29
+    },
+    "medium": {
+      "min": 30,
+      "max": 59
+    },
+    "high": {
+      "min": 60,
+      "max": 79
+    },
+    "critical": {
+      "min": 80,
+      "max": 100
+    }
+  },
+  "derived_fields": {
+    "profit_capture_ratio": "realized_pnl / position_value",
+    "exposure_score": "weighted sum of the four component band-midpoint scores"
+  },
+  "outputs": {
+    "cm006_exposure_scores": {
+      "file": "cm006_exposure_scores.csv"
+    },
+    "cm006_front_running_alerts": {
+      "file": "cm006_front_running_alerts.csv"
+    }
+  }
+}
