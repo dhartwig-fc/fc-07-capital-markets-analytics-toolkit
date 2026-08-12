@@ -1,0 +1,23 @@
+venue_operator_name,account_ref,jurisdiction,relationship,prior_alerts
+Continental Correspondent Bank,ACC001,Sweden,Regulated Market Operator,0
+Northwind Freight Co,ACC002,Germany,MTF Operator,0
+Ravenwood Trading Co,ACC003,United Kingdom,MTF Operator,0
+Highgate Commodities Ltd,ACC004,Cyprus,Systematic Internaliser,0
+Meridian Bulk Traders Ltd,ACC005,Singapore,Dark Pool Operator,0
+Falcon Ridge Commodities Ltd,ACC006,Hong Kong,OTF Operator,0
+Zeta Commodities Ltd,ACC007,Cyprus,MTF Operator,1
+Gamma Imports Ltd,ACC008,Marshall Islands,Systematic Internaliser,1
+Continental Correspondent Bank,ACC009,Sweden,Regulated Market Operator,1
+Northwind Freight Co,ACC010,Germany,MTF Operator,1
+Ravenwood Trading Co,ACC011,United Kingdom,MTF Operator,1
+Highgate Commodities Ltd,ACC012,Cyprus,Systematic Internaliser,1
+Meridian Bulk Traders Ltd,ACC013,Singapore,Dark Pool Operator,2
+Falcon Ridge Commodities Ltd,ACC014,Hong Kong,OTF Operator,2
+Zeta Commodities Ltd,ACC015,Cyprus,MTF Operator,2
+Gamma Imports Ltd,ACC016,Marshall Islands,Systematic Internaliser,2
+Continental Correspondent Bank,ACC017,Sweden,Regulated Market Operator,2
+Northwind Freight Co,ACC018,Germany,MTF Operator,3
+Alpha Trading Ltd,ACC019,Cayman Islands,MTF Operator,3
+Ravenwood Trading Co,ACC020,United Kingdom,MTF Operator,3
+Highgate Commodities Ltd,ACC021,Cyprus,Systematic Internaliser,3
+Meridian Bulk Traders Ltd,ACC022,Singapore,Dark Pool Operator,3

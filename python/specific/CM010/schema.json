@@ -1,0 +1,111 @@
+{
+  "schema_name": "cm010_suspicious_order_patterns_schema",
+  "version": "1.0",
+  "pattern_id": "CM010",
+  "description": "Machine-readable schema for the CM010 Suspicious Order Patterns analytics workflow.",
+  "datasets": {
+    "order_flow": {
+      "file": "order_flow.csv",
+      "primary_key": "account_ref",
+      "fields": {
+        "trader_name": "string",
+        "account_ref": "string",
+        "instrument": "string",
+        "cancelled_orders": "number",
+        "total_orders": "number",
+        "orders_per_second": "integer",
+        "price_move_after_burst_pct": "number",
+        "normal_move_pct": "number",
+        "avg_order_size": "number",
+        "normal_order_size": "number",
+        "venue_operator_name": "string"
+      },
+      "required": [
+        "trader_name",
+        "account_ref",
+        "instrument",
+        "cancelled_orders",
+        "total_orders",
+        "orders_per_second",
+        "price_move_after_burst_pct",
+        "normal_move_pct",
+        "avg_order_size",
+        "normal_order_size",
+        "venue_operator_name"
+      ]
+    },
+    "venues": {
+      "file": "venues.csv",
+      "primary_key": "account_ref",
+      "fields": {
+        "venue_operator_name": "string",
+        "account_ref": "string",
+        "jurisdiction": "string",
+        "relationship": "string",
+        "prior_alerts": "integer"
+      },
+      "required": [
+        "venue_operator_name",
+        "account_ref",
+        "jurisdiction",
+        "relationship",
+        "prior_alerts"
+      ]
+    }
+  },
+  "components": {
+    "cancel_amend_rate": {
+      "weight": 0.35
+    },
+    "quote_stuffing_intensity": {
+      "weight": 0.25
+    },
+    "momentum_ignition_signal": {
+      "weight": 0.20
+    },
+    "order_size_anomaly": {
+      "weight": 0.20
+    }
+  },
+  "band_scores": {
+    "Low": 15,
+    "Medium": 45,
+    "High": 70,
+    "Critical": 90
+  },
+  "thresholds": {
+    "alert_threshold": 80
+  },
+  "risk_bands": {
+    "low": {
+      "min": 0,
+      "max": 29
+    },
+    "medium": {
+      "min": 30,
+      "max": 59
+    },
+    "high": {
+      "min": 60,
+      "max": 79
+    },
+    "critical": {
+      "min": 80,
+      "max": 100
+    }
+  },
+  "derived_fields": {
+    "cancel_amend_rate_ratio": "cancelled_orders / total_orders",
+    "momentum_ignition_ratio": "price_move_after_burst_pct / normal_move_pct",
+    "order_size_anomaly_ratio": "avg_order_size / normal_order_size",
+    "exposure_score": "weighted sum of the four component band-midpoint scores"
+  },
+  "outputs": {
+    "cm010_exposure_scores": {
+      "file": "cm010_exposure_scores.csv"
+    },
+    "cm010_suspicious_order_patterns_alerts": {
+      "file": "cm010_suspicious_order_patterns_alerts.csv"
+    }
+  }
+}
