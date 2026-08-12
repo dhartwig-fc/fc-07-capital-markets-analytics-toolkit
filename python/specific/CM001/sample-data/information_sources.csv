@@ -1,0 +1,23 @@
+information_source_name,account_ref,role,employer,jurisdiction,relationship,prior_alerts
+Julia Costa (Sell-Side Research),ACC001,Sell-Side Analyst,Meridian Trust Bank Research,United Kingdom,Research contact,0
+Anders Berg (Corporate Access Desk),ACC002,Corporate Access,Continental Correspondent Bank,Sweden,Corporate access desk,0
+Anders Berg (Corporate Access Desk),ACC003,Corporate Access,Continental Correspondent Bank,Sweden,Corporate access desk,0
+Anders Berg (Corporate Access Desk),ACC004,Corporate Access,Continental Correspondent Bank,Sweden,Corporate access desk,1
+Helena Voss (Independent Consultant),ACC005,Independent Consultant,Voss Advisory,Switzerland,Consulting retainer,0
+Karim Idris (Prime Brokerage Contact),ACC006,Prime Brokerage,Pacific Rim Commercial Bank,Hong Kong,Prime brokerage contact,0
+Nils Petterson (Investor Relations Contact),ACC007,Investor Relations,Northwind Freight Co,Germany,IR contact,0
+"Sofia Lindqvist (Gamma Imports Ltd, Finance Director)",ACC008,Finance Director,Gamma Imports Ltd,Marshall Islands,Corporate insider,1
+Helena Voss (Independent Consultant),ACC009,Independent Consultant,Voss Advisory,Switzerland,Consulting retainer,1
+"Ruben Almeida (Legal Counsel, Gamma Imports Ltd)",ACC010,Legal Counsel,Gamma Imports Ltd,Marshall Islands,Corporate insider,1
+"Marcus Webb (Gamma Imports Ltd, Head of IR)",ACC011,Head of Investor Relations,Gamma Imports Ltd,Marshall Islands,Corporate insider,1
+Helena Voss (Independent Consultant),ACC012,Independent Consultant,Voss Advisory,Switzerland,Consulting retainer,2
+Karim Idris (Prime Brokerage Contact),ACC013,Prime Brokerage,Pacific Rim Commercial Bank,Hong Kong,Prime brokerage contact,1
+Karim Idris (Prime Brokerage Contact),ACC014,Prime Brokerage,Pacific Rim Commercial Bank,Hong Kong,Prime brokerage contact,2
+Helena Voss (Independent Consultant),ACC015,Independent Consultant,Voss Advisory,Switzerland,Consulting retainer,2
+Karim Idris (Prime Brokerage Contact),ACC016,Prime Brokerage,Pacific Rim Commercial Bank,Hong Kong,Prime brokerage contact,2
+"Sofia Lindqvist (Gamma Imports Ltd, Finance Director)",ACC017,Finance Director,Gamma Imports Ltd,Marshall Islands,Corporate insider,2
+"Ruben Almeida (Legal Counsel, Gamma Imports Ltd)",ACC018,Legal Counsel,Gamma Imports Ltd,Marshall Islands,Corporate insider,2
+"Marcus Webb (Gamma Imports Ltd, Head of IR)",ACC019,Head of Investor Relations,Gamma Imports Ltd,Marshall Islands,Corporate insider,3
+Nils Petterson (Investor Relations Contact),ACC020,Investor Relations,Zeta Commodities Ltd,Cyprus,IR contact,3
+"Sofia Lindqvist (Gamma Imports Ltd, Finance Director)",ACC021,Finance Director,Gamma Imports Ltd,Marshall Islands,Corporate insider,3
+"Marcus Webb (Gamma Imports Ltd, Head of IR)",ACC022,Head of Investor Relations,Gamma Imports Ltd,Marshall Islands,Corporate insider,3
