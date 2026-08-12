@@ -1,0 +1,23 @@
+clearing_broker_name,account_ref,jurisdiction,relationship,prior_alerts
+Gamma Imports Ltd,ACC001,Marshall Islands,Clearing broker,0
+Alpha Trading Ltd,ACC002,Cyprus,Clearing broker,0
+Zeta Commodities Ltd,ACC003,Cyprus,Give-up clearing agreement,0
+Ravenwood Trading Co,ACC004,Hong Kong,Clearing broker,0
+Falcon Ridge Commodities Ltd,ACC005,United Kingdom,Prime brokerage relationship,0
+Highgate Commodities Ltd,ACC006,United Kingdom,Clearing broker,1
+Northwind Freight Co,ACC007,Germany,Clearing broker,0
+Meridian Bulk Traders Ltd,ACC008,Singapore,Give-up clearing agreement,1
+Gamma Imports Ltd,ACC009,Marshall Islands,Clearing broker,1
+Alpha Trading Ltd,ACC010,Cyprus,Prime brokerage relationship,1
+Zeta Commodities Ltd,ACC011,Cyprus,Clearing broker,1
+Ravenwood Trading Co,ACC012,Hong Kong,Clearing broker,1
+Falcon Ridge Commodities Ltd,ACC013,United Kingdom,Give-up clearing agreement,1
+Highgate Commodities Ltd,ACC014,United Kingdom,Prime brokerage relationship,2
+Northwind Freight Co,ACC015,Germany,Clearing broker,2
+Meridian Bulk Traders Ltd,ACC016,Singapore,Clearing broker,2
+Gamma Imports Ltd,ACC017,Marshall Islands,Give-up clearing agreement,2
+Alpha Trading Ltd,ACC018,Cyprus,Clearing broker,2
+Continental Correspondent Bank,ACC019,Sweden,Prime brokerage relationship,3
+Zeta Commodities Ltd,ACC020,Cyprus,Clearing broker,3
+Ravenwood Trading Co,ACC021,Hong Kong,Give-up clearing agreement,3
+Falcon Ridge Commodities Ltd,ACC022,United Kingdom,Clearing broker,3
