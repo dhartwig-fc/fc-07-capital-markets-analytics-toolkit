@@ -1,0 +1,105 @@
+{
+  "schema_name": "cm004_layering_schema",
+  "version": "1.0",
+  "pattern_id": "CM004",
+  "description": "Machine-readable schema for the CM004 Layering (order-book) analytics workflow.",
+  "datasets": {
+    "orders": {
+      "file": "orders.csv",
+      "primary_key": "account_ref",
+      "fields": {
+        "trader_name": "string",
+        "account_ref": "string",
+        "instrument": "string",
+        "distinct_price_levels": "integer",
+        "orders_placed": "integer",
+        "orders_executed": "integer",
+        "imbalance_ratio": "number",
+        "seconds_to_reversal": "number",
+        "venue_operator_name": "string"
+      },
+      "required": [
+        "trader_name",
+        "account_ref",
+        "instrument",
+        "distinct_price_levels",
+        "orders_placed",
+        "orders_executed",
+        "imbalance_ratio",
+        "seconds_to_reversal",
+        "venue_operator_name"
+      ]
+    },
+    "venues": {
+      "file": "venues.csv",
+      "primary_key": "account_ref",
+      "fields": {
+        "venue_operator_name": "string",
+        "account_ref": "string",
+        "jurisdiction": "string",
+        "relationship": "string",
+        "prior_alerts": "integer"
+      },
+      "required": [
+        "venue_operator_name",
+        "account_ref",
+        "jurisdiction",
+        "relationship",
+        "prior_alerts"
+      ]
+    }
+  },
+  "components": {
+    "staggered_order_levels": {
+      "weight": 0.35
+    },
+    "order_to_trade_ratio": {
+      "weight": 0.25
+    },
+    "book_imbalance_created": {
+      "weight": 0.20
+    },
+    "reversal_speed": {
+      "weight": 0.20
+    }
+  },
+  "band_scores": {
+    "Low": 15,
+    "Medium": 45,
+    "High": 70,
+    "Critical": 90
+  },
+  "thresholds": {
+    "alert_threshold": 80
+  },
+  "risk_bands": {
+    "low": {
+      "min": 0,
+      "max": 29
+    },
+    "medium": {
+      "min": 30,
+      "max": 59
+    },
+    "high": {
+      "min": 60,
+      "max": 79
+    },
+    "critical": {
+      "min": 80,
+      "max": 100
+    }
+  },
+  "derived_fields": {
+    "order_to_trade_ratio_value": "orders_placed / orders_executed",
+    "exposure_score": "weighted sum of the four component band-midpoint scores"
+  },
+  "outputs": {
+    "cm004_exposure_scores": {
+      "file": "cm004_exposure_scores.csv"
+    },
+    "cm004_layering_alerts": {
+      "file": "cm004_layering_alerts.csv"
+    }
+  }
+}

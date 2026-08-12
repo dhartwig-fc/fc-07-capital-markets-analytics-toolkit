@@ -1,0 +1,23 @@
+venue_operator_name,account_ref,jurisdiction,relationship,prior_alerts
+Northwind Freight Co,ACC001,Germany,Direct Market Access,0
+Highgate Commodities Ltd,ACC002,United Kingdom,Sponsored Access,0
+Continental Correspondent Bank,ACC003,Sweden,Prime Brokerage DMA,0
+Ravenwood Trading Co,ACC004,Ireland,MTF Membership,0
+Alpha Trading Ltd,ACC005,Netherlands,Direct Market Access,0
+Zeta Commodities Ltd,ACC006,Cyprus,Algo Trading Facility,0
+Meridian Bulk Traders Ltd,ACC007,Luxembourg,Sponsored Access,0
+Falcon Ridge Commodities Ltd,ACC008,Singapore,Direct Market Access,1
+Northwind Freight Co,ACC009,Germany,MTF Membership,1
+Highgate Commodities Ltd,ACC010,United Kingdom,Algo Trading Facility,1
+Ravenwood Trading Co,ACC011,Ireland,Prime Brokerage DMA,1
+Alpha Trading Ltd,ACC012,Netherlands,Sponsored Access,1
+Zeta Commodities Ltd,ACC013,Cyprus,Direct Market Access,2
+Meridian Bulk Traders Ltd,ACC014,Luxembourg,Algo Trading Facility,2
+Falcon Ridge Commodities Ltd,ACC015,Singapore,MTF Membership,2
+Northwind Freight Co,ACC016,Germany,Prime Brokerage DMA,2
+Continental Correspondent Bank,ACC017,Sweden,Sponsored Access,2
+Highgate Commodities Ltd,ACC018,United Kingdom,Direct Market Access,2
+Gamma Imports Ltd,ACC019,Marshall Islands,Sponsored Access,3
+Ravenwood Trading Co,ACC020,Ireland,Algo Trading Facility,3
+Continental Correspondent Bank,ACC021,Sweden,MTF Membership,3
+Alpha Trading Ltd,ACC022,Netherlands,Prime Brokerage DMA,3
