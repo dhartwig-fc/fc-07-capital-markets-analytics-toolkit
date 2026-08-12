@@ -1,0 +1,17 @@
+# Added on the first commit that runs Python in this repository, mirroring fc-06's
+# .gitignore — the cheapest moment to have a gitignore is before the first stray
+# artefact.
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+
+# Individual CM0NN analytics may follow the fc-04/fc-05/fc-06 CWD-relative sample-data
+# path pattern; ignored here so a misfire cannot be committed by accident.
+/sample-data/
+
+# fc-07's structure folds scoring-model detail into each typology write-up rather than
+# a separate scoring-models/ tree (unlike fc-06) -- ignored so a locally-scaffolded but
+# unwanted directory from an earlier pass can never be committed by accident.
+/scoring-models/
