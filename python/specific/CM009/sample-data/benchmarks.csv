@@ -1,0 +1,23 @@
+benchmark_name,account_ref,administrator,jurisdiction,prior_alerts
+SONIA 3-Month Fixing,ACC001,Bank of England,United Kingdom,0
+EURIBOR 3-Month Fixing,ACC002,European Money Markets Institute (EMMI),Belgium,0
+WM/Reuters 4pm London Fix (GBP/USD),ACC003,Refinitiv Benchmark Services (UK) Limited,United Kingdom,0
+LBMA Gold Price PM Fixing,ACC004,ICE Benchmark Administration,United Kingdom,0
+ICE Brent Crude Settlement Fixing,ACC005,ICE Benchmark Administration,United Kingdom,0
+SOFR Overnight Fixing,ACC006,Federal Reserve Bank of New York,United States,0
+Platts Dated Brent Assessment,ACC007,S&P Global Platts,United Kingdom,1
+LME Copper Official Settlement,ACC008,London Metal Exchange,United Kingdom,1
+SONIA 3-Month Fixing,ACC009,Bank of England,United Kingdom,1
+EURIBOR 3-Month Fixing,ACC010,European Money Markets Institute (EMMI),Belgium,1
+WM/Reuters 4pm London Fix (EUR/USD),ACC011,Refinitiv Benchmark Services (UK) Limited,United Kingdom,1
+LBMA Gold Price PM Fixing,ACC012,ICE Benchmark Administration,United Kingdom,1
+ICE Brent Crude Settlement Fixing,ACC013,ICE Benchmark Administration,United Kingdom,2
+SOFR Overnight Fixing,ACC014,Federal Reserve Bank of New York,United States,2
+Platts Dated Brent Assessment,ACC015,S&P Global Platts,United Kingdom,2
+LME Copper Official Settlement,ACC016,London Metal Exchange,United Kingdom,2
+SONIA 3-Month Fixing,ACC017,Bank of England,United Kingdom,2
+EURIBOR 3-Month Fixing,ACC018,European Money Markets Institute (EMMI),Belgium,2
+ICE LIBOR-style USD Reference Rate Fixing,ACC019,ICE Benchmark Administration,United Kingdom,3
+WM/Reuters 4pm London Fix (GBP/USD),ACC020,Refinitiv Benchmark Services (UK) Limited,United Kingdom,3
+LBMA Gold Price PM Fixing,ACC021,ICE Benchmark Administration,United Kingdom,3
+ICE Brent Crude Settlement Fixing,ACC022,ICE Benchmark Administration,United Kingdom,3
