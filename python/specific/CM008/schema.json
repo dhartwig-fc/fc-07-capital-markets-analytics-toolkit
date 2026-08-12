@@ -1,0 +1,106 @@
+{
+  "schema_name": "cm008_cross_market_abuse_schema",
+  "version": "1.0",
+  "pattern_id": "CM008",
+  "description": "Machine-readable schema for the CM008 Cross Market Abuse analytics workflow.",
+  "datasets": {
+    "trading_accounts": {
+      "file": "trading_accounts.csv",
+      "primary_key": "account_ref",
+      "fields": {
+        "trader_name": "string",
+        "account_ref": "string",
+        "primary_instrument": "string",
+        "correlated_instrument": "string",
+        "correlation_pct": "integer",
+        "distinct_venues": "integer",
+        "impact_transfer_ratio": "number",
+        "seconds_between_venue_trades": "number",
+        "issuer_name": "string"
+      },
+      "required": [
+        "trader_name",
+        "account_ref",
+        "primary_instrument",
+        "correlated_instrument",
+        "correlation_pct",
+        "distinct_venues",
+        "impact_transfer_ratio",
+        "seconds_between_venue_trades",
+        "issuer_name"
+      ]
+    },
+    "instruments": {
+      "file": "instruments.csv",
+      "primary_key": "account_ref",
+      "fields": {
+        "issuer_name": "string",
+        "account_ref": "string",
+        "venue": "string",
+        "jurisdiction": "string",
+        "relationship": "string",
+        "prior_alerts": "integer"
+      },
+      "required": [
+        "issuer_name",
+        "account_ref",
+        "venue",
+        "jurisdiction",
+        "relationship",
+        "prior_alerts"
+      ]
+    }
+  },
+  "components": {
+    "cross_venue_position_correlation": {
+      "weight": 0.35
+    },
+    "venue_count": {
+      "weight": 0.25
+    },
+    "price_impact_transfer": {
+      "weight": 0.20
+    },
+    "timing_synchronization": {
+      "weight": 0.20
+    }
+  },
+  "band_scores": {
+    "Low": 15,
+    "Medium": 45,
+    "High": 70,
+    "Critical": 90
+  },
+  "thresholds": {
+    "alert_threshold": 80
+  },
+  "risk_bands": {
+    "low": {
+      "min": 0,
+      "max": 29
+    },
+    "medium": {
+      "min": 30,
+      "max": 59
+    },
+    "high": {
+      "min": 60,
+      "max": 79
+    },
+    "critical": {
+      "min": 80,
+      "max": 100
+    }
+  },
+  "derived_fields": {
+    "exposure_score": "weighted sum of the four component band-midpoint scores"
+  },
+  "outputs": {
+    "cm008_exposure_scores": {
+      "file": "cm008_exposure_scores.csv"
+    },
+    "cm008_cross_market_abuse_alerts": {
+      "file": "cm008_cross_market_abuse_alerts.csv"
+    }
+  }
+}
