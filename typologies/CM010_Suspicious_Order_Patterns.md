@@ -134,7 +134,7 @@ Band-midpoints 15/45/70/90, weighted sum, half-up, boundary at 80.
 
 ---
 
-# Example Exposure Score — ACC019 Dominic Farrow
+# Example Exposure Score — ACC019 Dominic Heronbutton
 
 | Component | Evidence | Band |
 |------------|----------|------|
@@ -199,7 +199,7 @@ alerts = suspect[suspect["exposure_score"] >= 80]
 # Investigator Outcome
 
 ```text
-Trader:                Dominic Farrow — ACC019
+Trader:                Dominic Heronbutton — ACC019
 Instrument:             Alpha Trading Ltd Ordinary Shares
 Cancelled/Total Orders: 2,720 / 3,200 (r = 0.850)
 Peak Order Rate:        70 orders per second

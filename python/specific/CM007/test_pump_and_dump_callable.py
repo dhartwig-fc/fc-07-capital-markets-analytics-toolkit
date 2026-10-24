@@ -80,17 +80,17 @@ def test_clean_account_is_not_alerted(governed, frames):
 
 def test_the_john_smith_bridge_alerts_critical(governed, frames):
     """ACC019 accumulates and pumps Corvus Aerospace Inc under a promotional campaign
-    run by John Smith -- the network's PEP, carried on the shared local id P001 -- and
+    run by John Cloverspindle -- the network's PEP, carried on the shared local id P001 -- and
     must clear the alert threshold at Critical, proving the fusion bridge is a real
     alerting subject, not a decorative row. It is also the single highest-scoring
     account in the set, which matters: the FC-10 adapter builds its case/graph from
-    score_all's top row, so the John Smith / P001 bridge has to BE that row."""
+    score_all's top row, so the John Cloverspindle / P001 bridge has to BE that row."""
     scored = governed.score_all(**frames)
     top = scored.iloc[0]
-    assert top["account_ref"] == "ACC019" and top["promoter_name"] == "John Smith" and top["promoter_id"] == "P001"
+    assert top["account_ref"] == "ACC019" and top["promoter_name"] == "John Cloverspindle" and top["promoter_id"] == "P001"
     row = governed.evaluate_pump_and_dump(**frames)
     bridge = row[row["account_ref"] == "ACC019"].iloc[0]
-    assert bridge["promoter_name"] == "John Smith" and bridge["promoter_id"] == "P001"
+    assert bridge["promoter_name"] == "John Cloverspindle" and bridge["promoter_id"] == "P001"
     assert bridge["exposure_score"] == 90 and bridge["exposure_band"] == "Critical"
 
 

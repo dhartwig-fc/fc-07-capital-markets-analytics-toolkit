@@ -51,9 +51,9 @@ class DiagramSpec:
     exposure_type: str = ""
     data_groups: List[DataGroup] = field(default_factory=list)
     subject_label: str = ""        # e.g. "TRADING ACCOUNT"
-    subject_name: str = ""         # e.g. "Viktor Sokolov · ACC019"
+    subject_name: str = ""         # e.g. "Viktor Flintquill · ACC019"
     subject_context: str = ""      # e.g. "Special Situations Desk"
-    bridge_entity: str = ""        # e.g. "Gamma Imports Ltd"
+    bridge_entity: str = ""        # e.g. "Gammavane Imports Ltd"
     score: int = 90
     band: str = "CRITICAL"
     components: List[Component] = field(default_factory=list)

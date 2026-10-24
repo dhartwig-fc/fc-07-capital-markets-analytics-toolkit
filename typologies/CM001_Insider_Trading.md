@@ -129,13 +129,13 @@ information source in the 90 days before the event.
 
 ---
 
-# Example Exposure Score — ACC019 Viktor Sokolov
+# Example Exposure Score — ACC019 Viktor Flintquill
 
 | Component | Evidence | Band |
 |------------|----------|------|
 | Pre-Event Position Build | 39,600 of 60,000 normal average position (r = 0.660) | Critical |
 | Timing Proximity to Event | Position built 0 days before the event | Critical |
-| Information Access Linkage | 10 contact events with Marcus Webb, Gamma Imports Ltd's Head of IR, in the 90 days before the event | Critical |
+| Information Access Linkage | 10 contact events with Marcus Larchbutton, Gammavane Imports Ltd's Head of IR, in the 90 days before the event | Critical |
 | Profit Realisation | $2,090,400 realised on a $2,400,000 entry position (r = 0.871) | Critical |
 
 **Total Exposure Score: 90 / 100 — Critical** (the single highest-scoring account in
@@ -194,12 +194,12 @@ alerts = suspect[suspect["exposure_score"] >= 80]
 # Investigator Outcome
 
 ```text
-Trader:                Viktor Sokolov — ACC019
+Trader:                Viktor Flintquill — ACC019
 Desk:                  Special Situations Desk
-Issuer:                Gamma Imports Ltd
+Issuer:                Gammavane Imports Ltd
 Normal Average Position: 60,000 units
 Pre-Event Position Build: 39,600 units (r = 0.660), 0 days before the event
-Information Source:    Marcus Webb (Gamma Imports Ltd, Head of Investor Relations)
+Information Source:    Marcus Larchbutton (Gammavane Imports Ltd, Head of Investor Relations)
 Contact Events (90d):  10
 Position Value at Entry: $2,400,000 → Realised P&L: $2,090,400 (r = 0.871)
 Exposure Score:        90 / 100

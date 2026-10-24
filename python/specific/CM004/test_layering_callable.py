@@ -87,10 +87,10 @@ def test_the_gamma_imports_bridge_alerts_critical(governed, frames):
     Gamma bridge has to BE that row."""
     scored = governed.score_all(**frames)
     top = scored.iloc[0]
-    assert top["account_ref"] == "ACC019" and top["venue_operator_name"] == "Gamma Imports Ltd"
+    assert top["account_ref"] == "ACC019" and top["venue_operator_name"] == "Gammavane Imports Ltd"
     row = governed.evaluate_layering(**frames)
     bridge = row[row["account_ref"] == "ACC019"].iloc[0]
-    assert bridge["venue_operator_name"] == "Gamma Imports Ltd"
+    assert bridge["venue_operator_name"] == "Gammavane Imports Ltd"
     assert bridge["exposure_score"] == 90 and bridge["exposure_band"] == "Critical"
 
 

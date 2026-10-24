@@ -137,7 +137,7 @@ wash-trading tell, so this component's banding is inverted relative to the other
 
 ---
 
-# Example Exposure Score — ACC019 Grigor Andonov
+# Example Exposure Score — ACC019 Grigor Puddlequill
 
 | Component | Evidence | Band |
 |------------|----------|------|
@@ -202,7 +202,7 @@ alerts = suspect[suspect["exposure_score"] >= 80]
 # Investigator Outcome
 
 ```text
-Trader:                 Grigor Andonov — ACC019
+Trader:                 Grigor Puddlequill — ACC019
 Instrument:             Continental Correspondent Bank Pref Shares
 Total Volume:           500,000 units
 Self-Matched Volume:    450,000 units (r = 0.900)

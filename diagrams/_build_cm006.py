@@ -19,7 +19,7 @@ SPEC = DiagramSpec(
         DataGroup("MARKET DATA", ["Order book depth", "Quote &amp; trade sequencing", "Venue latency records"]),
         DataGroup("OPEN SOURCE INTELLIGENCE", ["Adverse media", "Investigative reports", "Commercial databases"]),
     ],
-    subject_label="TRADING ACCOUNT", subject_name="Vanessa Cole &#183; ACC019",
+    subject_label="TRADING ACCOUNT", subject_name="Vanessa Thistlethimble &#183; ACC019",
     subject_context="Agency Execution Desk", bridge_entity="Alpha Trading Ltd",
     score=90, band="CRITICAL",
     components=[

@@ -106,7 +106,7 @@
   <g>
     <rect x="784" y="192" width="232" height="72" rx="7" fill="#f3eefb" stroke="#6a3fa0" stroke-width="2"/>
     <text x="912" y="214" class="pur b" font-size="12.5" text-anchor="middle">INFORMATION ACCESS LINKAGE</text>
-    <text x="912" y="234" class="ink" font-size="11.5" text-anchor="middle">10 contact events with the Gamma Imports Ltd Head of IR</text>
+    <text x="912" y="234" class="ink" font-size="11.5" text-anchor="middle">10 contact events with the Gammavane Imports Ltd Head of IR</text>
     <text x="912" y="250" class="sub" font-size="10.8" text-anchor="middle">supporting signal</text>
   </g>
   <g>
@@ -118,7 +118,7 @@
   <g>
     <rect x="742" y="470" width="272" height="96" rx="8" fill="#e9f0fb" stroke="#1c4fa0" stroke-width="2.6"/>
     <text x="892" y="496" class="blu b" font-size="13" text-anchor="middle">TRADING ACCOUNT</text>
-    <text x="892" y="517" class="ink b" font-size="12.5" text-anchor="middle">Viktor Sokolov &#183; ACC019</text>
+    <text x="892" y="517" class="ink b" font-size="12.5" text-anchor="middle">Viktor Flintquill &#183; ACC019</text>
     <text x="892" y="536" class="sub" font-size="10.8" text-anchor="middle">Special Situations Desk</text>
     <text x="892" y="552" class="sub" font-size="10.8" text-anchor="middle">exposure aggregating</text>
   </g>
@@ -127,7 +127,7 @@
     <use href="#i-alert" x="1142" y="560" width="30" height="30"/>
     <text x="1262" y="566" class="red b" font-size="13" text-anchor="middle">RISK ALERT</text>
     <text x="1262" y="588" class="ink" font-size="11.5" text-anchor="middle">Pre-Event Position Build confirmed &amp;</text>
-    <text x="1262" y="606" class="ink" font-size="11.5" text-anchor="middle">linked to Gamma Imports Ltd</text>
+    <text x="1262" y="606" class="ink" font-size="11.5" text-anchor="middle">linked to Gammavane Imports Ltd</text>
     <text x="1262" y="628" class="red b" font-size="13" text-anchor="middle">90 / 100 &#183; CRITICAL</text>
   </g>
 
@@ -143,7 +143,7 @@
     <text x="672" y="825" class="red b" font-size="10.5">Critical &#183; weight 25%</text>
     <rect x="956" y="772" width="300" height="62" rx="7" class="card"/>
     <text x="1000" y="790" class="ink b" font-size="11.5">INFORMATION ACCESS LINKAGE</text>
-    <text x="1000" y="810" class="sub" font-size="10.5">10 contact events with the Gamma Imports Ltd Head of IR</text>
+    <text x="1000" y="810" class="sub" font-size="10.5">10 contact events with the Gammavane Imports Ltd Head of IR</text>
     <text x="1000" y="825" class="red b" font-size="10.5">Critical &#183; weight 20%</text>
     <rect x="1284" y="772" width="300" height="62" rx="7" class="card"/>
     <text x="1328" y="790" class="ink b" font-size="11.5">PROFIT REALISATION</text>

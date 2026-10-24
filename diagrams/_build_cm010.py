@@ -19,7 +19,7 @@ SPEC = DiagramSpec(
         DataGroup("MARKET DATA", ["Instrument reference data", "Order-book depth history", "Reference price levels"]),
         DataGroup("OPEN SOURCE INTELLIGENCE", ["Adverse media", "Investigative reports", "Commercial databases"]),
     ],
-    subject_label="TRADING ACCOUNT", subject_name="Dominic Farrow &#183; ACC019",
+    subject_label="TRADING ACCOUNT", subject_name="Dominic Heronbutton &#183; ACC019",
     subject_context="Order Flow (Alpha Trading Ltd Ordinary Shares)", bridge_entity="Alpha Trading Ltd",
     score=90, band="CRITICAL",
     components=[

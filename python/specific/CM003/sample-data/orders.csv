@@ -1,23 +1,23 @@
 trader_name,account_ref,instrument,total_order_value,spoof_order_value,avg_cancel_seconds,spoof_side_depth,genuine_side_depth,opposite_side_filled_value,broker_name
-Nadia Petrova,ACC001,S&P 500 E-mini Futures,1250000,85000,21.0,4200,85162,7060,Gamma Imports Ltd
-Julius Ferreira,ACC002,10-Year US Treasury Futures,980000,72500,47.1,3600,39257,21390,Alpha Trading Ltd
-Meera Krishnan,ACC003,EUR/USD Spot FX,1620000,89100,21.2,5100,27803,11230,Continental Correspondent Bank
-Oskar Lindqvist,ACC004,Brent Crude Oil Futures,2100000,67200,7.8,6200,83655,8870,Ravenwood Trading Co
-Chidi Okonkwo,ACC005,Gold Futures (COMEX),1430000,221600,43.6,4800,55959,11300,Falcon Ridge Commodities Ltd
-Ingrid Halvorsen,ACC006,FTSE 100 Index Futures,875000,68200,47.9,3900,18514,20870,Highgate Commodities Ltd
-Tomasz Wojcik,ACC007,Natural Gas Futures,1980000,540500,9.0,5600,149956,35130,Northwind Freight Co
-Amara Diallo,ACC008,Copper Futures (LME),2450000,627200,11.4,7100,21414,99720,Meridian Bulk Traders Ltd
-Felix Brandt,ACC009,Corn Futures (CBOT),1340000,276000,14.8,4400,19909,103220,Gamma Imports Ltd
-Yuki Tanaka,ACC010,Bund Futures (Eurex),3100000,784300,11.6,8300,6957,107450,Alpha Trading Ltd
-Ruben Castellano,ACC011,Alpha Trading Ltd Ordinary Shares,1760000,885300,21.8,5900,31921,291260,Continental Correspondent Bank
-Freya Solheim,ACC012,Nikkei 225 Futures,2280000,303200,3.5,6700,42565,27890,Ravenwood Trading Co
-Dmitri Volkov,ACC013,Silver Futures (COMEX),1590000,1319700,0.7,5300,96623,106900,Falcon Ridge Commodities Ltd
-Aisha Rahman,ACC014,WTI Crude Oil Futures,2950000,2088600,4.9,8900,30832,294490,Highgate Commodities Ltd
-Callum Fitzgerald,ACC015,DAX Index Futures,1120000,407700,4.5,4100,7226,140660,Northwind Freight Co
-Elif Demir,ACC016,Falcon Ridge Commodities Ltd Ordinary Shares,2670000,2528500,1.3,7800,29521,386860,Meridian Bulk Traders Ltd
-Santiago Rivas,ACC017,Soybean Futures (CBOT),3350000,1805600,4.6,9600,4435,514600,Gamma Imports Ltd
-Noor Al-Sayed,ACC018,GBP/USD Spot FX,1890000,1368400,3.5,5700,9500,602100,Alpha Trading Ltd
-Viktor Sokolov,ACC019,Zeta Commodities Ltd Ordinary Shares,2400000,2181600,0.6,7200,1755,1917630,Zeta Commodities Ltd
-Beatriz Menendez,ACC020,Wheat Futures (CBOT),2820000,2600000,3.9,8600,3792,1557400,Continental Correspondent Bank
-Kwame Asante,ACC021,Highgate Commodities Ltd Ordinary Shares,1975000,920400,0.5,6100,1681,878980,Ravenwood Trading Co
-Lena Kowalski,ACC022,Nasdaq 100 E-mini Futures,3480000,2617000,3.4,9900,1112,2344830,Falcon Ridge Commodities Ltd
+Nadia Mosstumblea,ACC001,S&P 500 E-mini Futures,1250000,85000,21.0,4200,85162,7060,Gammavane Imports Ltd
+Julius Umberthimble,ACC002,10-Year US Treasury Futures,980000,72500,47.1,3600,39257,21390,Alpha Trading Ltd
+Meera Gorsekettle,ACC003,EUR/USD Spot FX,1620000,89100,21.2,5100,27803,11230,Continental Correspondent Bank
+Oskar Nettlewhistle,ACC004,Brent Crude Oil Futures,2100000,67200,7.8,6200,83655,8870,Ravenwood Trading Co
+Chidi Duskmote,ACC005,Gold Futures (COMEX),1430000,221600,43.6,4800,55959,11300,Falcon Ridge Commodities Ltd
+Ingrid Duskbristle,ACC006,FTSE 100 Index Futures,875000,68200,47.9,3900,18514,20870,Highgate Commodities Ltd
+Tomasz Pebblethimble,ACC007,Natural Gas Futures,1980000,540500,9.0,5600,149956,35130,Northwind Freight Co
+Amara Saltwhistle,ACC008,Copper Futures (LME),2450000,627200,11.4,7100,21414,99720,Meridian Bulk Traders Ltd
+Felix Umbertumble,ACC009,Corn Futures (CBOT),1340000,276000,14.8,4400,19909,103220,Gammavane Imports Ltd
+Yuki Tallowwhistle,ACC010,Bund Futures (Eurex),3100000,784300,11.6,8300,6957,107450,Alpha Trading Ltd
+Ruben Yarrowspindle,ACC011,Alpha Trading Ltd Ordinary Shares,1760000,885300,21.8,5900,31921,291260,Continental Correspondent Bank
+Freya Vellumspindle,ACC012,Nikkei 225 Futures,2280000,303200,3.5,6700,42565,27890,Ravenwood Trading Co
+Dmitri Brackencrumb,ACC013,Silver Futures (COMEX),1590000,1319700,0.7,5300,96623,106900,Falcon Ridge Commodities Ltd
+Aisha Ivybutton,ACC014,WTI Crude Oil Futures,2950000,2088600,4.9,8900,30832,294490,Highgate Commodities Ltd
+Callum Hazelbutton,ACC015,DAX Index Futures,1120000,407700,4.5,4100,7226,140660,Northwind Freight Co
+Elif Ivycrumb,ACC016,Falcon Ridge Commodities Ltd Ordinary Shares,2670000,2528500,1.3,7800,29521,386860,Meridian Bulk Traders Ltd
+Santiago Hazelcrumb,ACC017,Soybean Futures (CBOT),3350000,1805600,4.6,9600,4435,514600,Gammavane Imports Ltd
+Noor Umberwisp,ACC018,GBP/USD Spot FX,1890000,1368400,3.5,5700,9500,602100,Alpha Trading Ltd
+Viktor Flintquill,ACC019,Zeta Commodities Ltd Ordinary Shares,2400000,2181600,0.6,7200,1755,1917630,Zeta Commodities Ltd
+Beatriz Willowspindle,ACC020,Wheat Futures (CBOT),2820000,2600000,3.9,8600,3792,1557400,Continental Correspondent Bank
+Kwame Nettlethimble,ACC021,Highgate Commodities Ltd Ordinary Shares,1975000,920400,0.5,6100,1681,878980,Ravenwood Trading Co
+Lena Rushquill,ACC022,Nasdaq 100 E-mini Futures,3480000,2617000,3.4,9900,1112,2344830,Falcon Ridge Commodities Ltd

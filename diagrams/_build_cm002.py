@@ -20,7 +20,7 @@ SPEC = DiagramSpec(
         DataGroup("CORPORATE REGISTRY DATA", ["Issuer ownership &amp; control", "Director &amp; officer records", "Beneficial ownership"]),
         DataGroup("OPEN SOURCE INTELLIGENCE", ["Adverse media", "Investigative reports", "Commercial databases"]),
     ],
-    subject_label="TRADING ACCOUNT", subject_name="Marcus Devereux &#183; ACC019",
+    subject_label="TRADING ACCOUNT", subject_name="Marcus Kettlebutton &#183; ACC019",
     subject_context="Equities Prop Desk", bridge_entity="Alpha Trading Ltd",
     score=90, band="CRITICAL",
     components=[

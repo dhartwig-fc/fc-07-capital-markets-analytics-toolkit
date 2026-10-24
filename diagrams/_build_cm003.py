@@ -19,7 +19,7 @@ SPEC = DiagramSpec(
         DataGroup("VENUE DATA", ["Exchange &amp; MTF reference data", "Market microstructure rules", "Trading-hours &amp; session data"]),
         DataGroup("OPEN SOURCE INTELLIGENCE", ["Adverse media", "Investigative reports", "Commercial databases"]),
     ],
-    subject_label="TRADING ACCOUNT", subject_name="Viktor Sokolov &#183; ACC019",
+    subject_label="TRADING ACCOUNT", subject_name="Viktor Flintquill &#183; ACC019",
     subject_context="Zeta Commodities Ltd Ordinary Shares", bridge_entity="Zeta Commodities Ltd",
     score=90, band="CRITICAL",
     components=[

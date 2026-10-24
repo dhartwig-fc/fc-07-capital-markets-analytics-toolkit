@@ -1,5 +1,5 @@
 broker_name,account_ref,venue,jurisdiction,relationship,prior_alerts
-Gamma Imports Ltd,ACC001,CME Globex,United States,Executing Broker,0
+Gammavane Imports Ltd,ACC001,CME Globex,United States,Executing Broker,0
 Alpha Trading Ltd,ACC002,ICE Futures Europe,United Kingdom,Prime Broker,0
 Continental Correspondent Bank,ACC003,EBS Market,Switzerland,Direct Market Access,0
 Ravenwood Trading Co,ACC004,ICE Futures Europe,United Kingdom,Introducing Broker,0
@@ -7,7 +7,7 @@ Falcon Ridge Commodities Ltd,ACC005,CME Globex,United States,Executing Broker,0
 Highgate Commodities Ltd,ACC006,ICE Futures Europe,United Kingdom,Prime Broker,0
 Northwind Freight Co,ACC007,CME Globex,United States,Direct Market Access,1
 Meridian Bulk Traders Ltd,ACC008,London Metal Exchange,United Kingdom,Executing Broker,1
-Gamma Imports Ltd,ACC009,CME Globex,United States,Prime Broker,1
+Gammavane Imports Ltd,ACC009,CME Globex,United States,Prime Broker,1
 Alpha Trading Ltd,ACC010,Eurex,Germany,Introducing Broker,1
 Continental Correspondent Bank,ACC011,London Stock Exchange,United Kingdom,Executing Broker,1
 Ravenwood Trading Co,ACC012,Osaka Exchange,Japan,Direct Market Access,1
@@ -15,7 +15,7 @@ Falcon Ridge Commodities Ltd,ACC013,CME Globex,United States,Prime Broker,1
 Highgate Commodities Ltd,ACC014,NYMEX,United States,Executing Broker,2
 Northwind Freight Co,ACC015,Eurex,Germany,Direct Market Access,1
 Meridian Bulk Traders Ltd,ACC016,Johannesburg Stock Exchange,South Africa,Introducing Broker,2
-Gamma Imports Ltd,ACC017,CME Globex,United States,Prime Broker,2
+Gammavane Imports Ltd,ACC017,CME Globex,United States,Prime Broker,2
 Alpha Trading Ltd,ACC018,EBS Market,Switzerland,Executing Broker,2
 Zeta Commodities Ltd,ACC019,London Stock Exchange,Cyprus,Prime Broker,3
 Continental Correspondent Bank,ACC020,CME Globex,United States,Direct Market Access,2

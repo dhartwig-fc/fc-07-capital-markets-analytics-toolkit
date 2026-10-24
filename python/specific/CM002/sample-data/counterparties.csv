@@ -6,7 +6,7 @@ Northwind Freight Co,ACC004,Nasdaq Dubai,Germany,Corporate trading vehicle,0
 Ravenwood Trading Co,ACC005,Euronext Dublin,Ireland,Custodial nominee arrangement,0
 Continental Correspondent Bank,ACC006,Deutsche Börse Xetra,Sweden,Discretionary investment mandate holder,1
 Zeta Commodities Ltd,ACC007,Warsaw Stock Exchange,Cyprus,Beneficial owner (declared),0
-Gamma Imports Ltd,ACC008,Nasdaq Stockholm,Marshall Islands,Ultimate controlling shareholder,1
+Gammavane Imports Ltd,ACC008,Nasdaq Stockholm,Marshall Islands,Ultimate controlling shareholder,1
 Falcon Ridge Commodities Ltd,ACC009,Oslo Børs,Canada,Nominee holding structure,1
 Highgate Commodities Ltd,ACC010,Johannesburg Stock Exchange,South Africa,Corporate trading vehicle,1
 Meridian Bulk Traders Ltd,ACC011,Singapore Exchange,Singapore,Custodial nominee arrangement,1
@@ -14,7 +14,7 @@ Northwind Freight Co,ACC012,Euronext Amsterdam,Germany,Discretionary investment 
 Ravenwood Trading Co,ACC013,Toronto Stock Exchange,Ireland,Beneficial owner (declared),1
 Continental Correspondent Bank,ACC014,SIX Swiss Exchange,Sweden,Ultimate controlling shareholder,2
 Zeta Commodities Ltd,ACC015,Hong Kong Stock Exchange,Cyprus,Nominee holding structure,2
-Gamma Imports Ltd,ACC016,Vienna Stock Exchange,Marshall Islands,Corporate trading vehicle,2
+Gammavane Imports Ltd,ACC016,Vienna Stock Exchange,Marshall Islands,Corporate trading vehicle,2
 Falcon Ridge Commodities Ltd,ACC017,Madrid Stock Exchange (BME),Canada,Custodial nominee arrangement,2
 Highgate Commodities Ltd,ACC018,Athens Stock Exchange,South Africa,Discretionary investment mandate holder,2
 Alpha Trading Ltd,ACC019,London Stock Exchange,British Virgin Islands,Ultimate controlling shareholder,3

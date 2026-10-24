@@ -11,8 +11,8 @@ Master inventory of the Capital Markets Analytics scenarios.
 - **CM001 Insider Trading — BUILT**. The reference implementation every other
   CM00N typology mirrors: fc-07 analytic (pre-event position build 35%, timing
   proximity to event 25%, information access linkage 20%, profit realisation 20%)
-  + 22-row real-named sample data + docs + diagram; fuses onto **Gamma Imports Ltd**
-  in the estate network via canonical entity resolution (ACC019, Viktor Sokolov,
+  + 22-row real-named sample data + docs + diagram; fuses onto **Gammavane Imports Ltd**
+  in the estate network via canonical entity resolution (ACC019, Viktor Flintquill,
   90/Critical, the single highest-scoring account).
 - **CM002 Market Manipulation — BUILT**. Mirrors CM001's file set exactly
   (price impact ratio 35%, volume concentration 25%, coordinated accounts 20%,
@@ -25,7 +25,7 @@ Master inventory of the Capital Markets Analytics scenarios.
 - **CM004 Layering — BUILT**. Order-book layering, distinct from the AML "layering"
   typology. Mirrors CM001-CM003's file set exactly (staggered order levels 35%,
   order-to-trade ratio 25%, book imbalance created 20%, reversal speed 20%); fuses
-  onto **Gamma Imports Ltd** in the estate network via canonical entity resolution
+  onto **Gammavane Imports Ltd** in the estate network via canonical entity resolution
   (ACC019, 90/Critical). A second row names **Continental Correspondent Bank** as a
   recurring venue operator, the family's first recurring shared entity after Gamma
   Imports Ltd.
@@ -40,11 +40,11 @@ Master inventory of the Capital Markets Analytics scenarios.
   typology to bridge onto Alpha Trading Ltd after CM002.
 - **CM007 Pump and Dump — BUILT**. Mirrors CM001-CM006's file set exactly
   (accumulation concentration 35%, promotional coordination 25%, price inflation
-  20%, distribution into retail 20%); fuses onto **John Smith** (the network's PEP,
+  20%, distribution into retail 20%); fuses onto **John Cloverspindle** (the network's PEP,
   local id **P001**) in the estate network via canonical entity resolution
   (ACC019, 90/Critical). CM007 is the family's designated PERSON-bridge typology:
   unlike every other CM00N typology, which bridges onto a connected COMPANY matched
-  by exact name, ACC019's promotion is coordinated by John Smith, and because
+  by exact name, ACC019's promotion is coordinated by John Cloverspindle, and because
   persons never name-merge under canonical resolution, the bridge is carried on the
   shared local id (P001) instead of the name — mirroring fc-06's BA009.
 - **CM008 Cross Market Abuse — BUILT**. Mirrors CM001-CM007's file set exactly
@@ -54,9 +54,9 @@ Master inventory of the Capital Markets Analytics scenarios.
   typology to bridge onto Zeta Commodities Ltd after CM003.
 - **CM009 Benchmark Manipulation — BUILT**. Mirrors CM001-CM008's file set exactly
   (fixing window concentration 35%, price distortion 25%, order timing precision
-  20%, repeat pattern 20%); fuses onto **Gamma Imports Ltd** in the estate network
+  20%, repeat pattern 20%); fuses onto **Gammavane Imports Ltd** in the estate network
   via canonical entity resolution (ACC019, 90/Critical), the third CM typology to
-  bridge onto Gamma Imports Ltd after CM001 and CM004.
+  bridge onto Gammavane Imports Ltd after CM001 and CM004.
 - **CM010 Suspicious Order Patterns — BUILT**. The tenth and final fc-07 typology.
   Mirrors CM001-CM009's file set exactly (cancel/amend rate 35%, quote stuffing
   intensity 25%, momentum ignition signal 20%, order size anomaly 20%); fuses onto
@@ -131,21 +131,21 @@ Master inventory of the Capital Markets Analytics scenarios.
 Every CM typology deliberately names an entity already in the estate network so
 canonical resolution joins it into a fused case:
 
-- CM001 Insider Trading → issuer/information-source linkage to **Gamma Imports Ltd**.
+- CM001 Insider Trading → issuer/information-source linkage to **Gammavane Imports Ltd**.
 - CM002 Market Manipulation → ultimate owner **Alpha Trading Ltd**.
 - CM003 Spoofing → broker **Zeta Commodities Ltd**.
-- CM004 Layering → venue operator **Gamma Imports Ltd** (also names **Continental
+- CM004 Layering → venue operator **Gammavane Imports Ltd** (also names **Continental
   Correspondent Bank** as a recurring secondary venue operator).
 - CM005 Wash Trading → clearing broker **Continental Correspondent Bank**.
 - CM006 Front Running → client firm **Alpha Trading Ltd** (second appearance).
-- CM007 Pump and Dump → promoter **John Smith** (the network PEP, local id P001).
+- CM007 Pump and Dump → promoter **John Cloverspindle** (the network PEP, local id P001).
 - CM008 Cross Market Abuse → issuer **Zeta Commodities Ltd** (second appearance).
-- CM009 Benchmark Manipulation → issuer **Gamma Imports Ltd** (third appearance).
+- CM009 Benchmark Manipulation → issuer **Gammavane Imports Ltd** (third appearance).
 - CM010 Suspicious Order Patterns → venue operator **Alpha Trading Ltd** (third
   appearance).
 
-Gamma Imports Ltd (x3), Alpha Trading Ltd (x3), Zeta Commodities Ltd (x2),
-Continental Correspondent Bank (x1 primary + x1 recurring secondary) and John Smith
+Gammavane Imports Ltd (x3), Alpha Trading Ltd (x3), Zeta Commodities Ltd (x2),
+Continental Correspondent Bank (x1 primary + x1 recurring secondary) and John Cloverspindle
 (x1, person bridge) between them cover all ten CM typologies, mirroring the fc-06
 family's recurring-entity pattern.
 

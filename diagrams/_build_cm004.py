@@ -20,8 +20,8 @@ SPEC = DiagramSpec(
         DataGroup("INSTRUMENT REFERENCE DATA", ["Instrument identifiers", "Issuer reference data", "Tick size &amp; venue rules", "Liquidity profile"]),
         DataGroup("OPEN SOURCE INTELLIGENCE", ["Adverse media", "Investigative reports", "Commercial databases"]),
     ],
-    subject_label="TRADING ACCOUNT", subject_name="Renata Silva &#183; ACC019",
-    subject_context="Order Flow", bridge_entity="Gamma Imports Ltd",
+    subject_label="TRADING ACCOUNT", subject_name="Renata Quillmote &#183; ACC019",
+    subject_context="Order Flow", bridge_entity="Gammavane Imports Ltd",
     score=90, band="CRITICAL",
     components=[
         Component("Staggered Order Levels", "10 distinct price levels populated", "Critical", 35),

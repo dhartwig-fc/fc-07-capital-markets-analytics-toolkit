@@ -133,7 +133,7 @@ accounts identified.
 
 ---
 
-# Example Exposure Score — ACC019 Desmond Clarke
+# Example Exposure Score — ACC019 Desmond Vellummote
 
 | Component | Evidence | Band |
 |------------|----------|------|
@@ -145,7 +145,7 @@ accounts identified.
 **Total Exposure Score: 90 / 100 — Critical** (the single highest-scoring account in
 the sample data)
 
-Promoter: **John Smith** (promoter_id `P001`), the network's PEP — persons never
+Promoter: **John Cloverspindle** (promoter_id `P001`), the network's PEP — persons never
 name-merge under canonical resolution the way companies do, so the stable local id is
 what carries the fusion bridge, not the promoter's name alone.
 
@@ -202,13 +202,13 @@ alerts = suspect[suspect["exposure_score"] >= 80]
 # Investigator Outcome
 
 ```text
-Trader:                Desmond Clarke — ACC019
+Trader:                Desmond Vellummote — ACC019
 Instrument:             Corvus Aerospace Inc
 Free Float Accumulated: 68% (Critical), pre-promotion
 Promotional Coordination: 14 coordinated posts identified
 Price Baseline / Peak:  $0.85 → $3.57 (r = 4.200)
 Total Position:         350,000 units → Distributed to Retail: 315,000 units (r = 0.900)
-Promoter:                John Smith (promoter_id P001) — network PEP
+Promoter:                John Cloverspindle (promoter_id P001) — network PEP
 Exposure Score:         90 / 100
 Investigation Outcome:  Escalate — free float accumulated ahead of a coordinated
                          promotional campaign, price inflated well beyond baseline,
@@ -243,7 +243,7 @@ ahead of a campaign, the coordinated promotional activity around it, the price
 inflation the campaign produces, and the volume distributed into the retail buying it
 creates, it surfaces trading that would otherwise clear as an ordinary momentum trade.
 It fuses directly onto the estate's known PEP network — the promoter behind ACC019 is
-John Smith, carried on the stable local id P001 rather than a name-merge, since persons
+John Cloverspindle, carried on the stable local id P001 rather than a name-merge, since persons
 never resolve the way companies do — extending the fc-07 Capital Markets family's
 coverage from information-advantage trading (CM001) into manufactured-price trading.
 

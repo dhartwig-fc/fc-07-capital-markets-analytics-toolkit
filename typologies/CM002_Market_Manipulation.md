@@ -129,7 +129,7 @@ surveillance window.
 
 ---
 
-# Example Exposure Score — ACC019 Marcus Devereux
+# Example Exposure Score — ACC019 Marcus Kettlebutton
 
 | Component | Evidence | Band |
 |------------|----------|------|
@@ -194,7 +194,7 @@ alerts = suspect[suspect["exposure_score"] >= 80]
 # Investigator Outcome
 
 ```text
-Account Holder:        Marcus Devereux — ACC019
+Account Holder:        Marcus Kettlebutton — ACC019
 Desk:                  Equities Prop Desk
 Instrument:            Alpha Trading Ltd Ordinary Shares
 Normal Volatility:     4.0%
