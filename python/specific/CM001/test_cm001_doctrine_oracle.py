@@ -244,38 +244,42 @@ def test_no_linkage_near_miss_does_not_alert(governed):
     """Sheet near-miss: position build and profit without an information-access
     linkage (doctrine: linkage 'corroborates'). Build 0.9 Crit, 0 days Crit,
     0 contacts Low, profit 0.9 Crit: 31.5+22.5+3+18 = 75 -> High, below 80."""
-    frames = _frames([_row("T-NOLINK", 10000, 9000, 0, 0, 10000, 9000)])
-    scored = governed.score_all(**frames)
-    assert (scored.iloc[0]["exposure_score"], scored.iloc[0]["exposure_band"]) == (75, "High")
-    assert governed.evaluate_insider_trading(**frames).empty
+    frames = _frames([_row("T-NOLINK", 10000, 9000, 0, 0, 10000, 9000), WORKED])  # alerting control
+    scored = governed.score_all(**frames).set_index("subject_entity_id")
+    assert len(scored) == 2
+    assert (scored.loc["T-NOLINK", "exposure_score"], scored.loc["T-NOLINK", "exposure_band"]) == (75, "High")
+    assert list(governed.evaluate_insider_trading(**frames)["subject_entity_id"]) == ["T-WORKED"]
 
 
 def test_ordinary_directional_bet_does_not_alert(governed):
     """Sheet near-miss: an ordinary directional bet at normal size, far from the
     event, that happened to pay. Build 0.05 Low, 30 days Low, 1 contact Low,
     profit 0.6 High: 5.25+3.75+3+14 = 26 -> Low."""
-    frames = _frames([_row("T-BET", 10000, 500, 30, 1, 10000, 6000)])
-    scored = governed.score_all(**frames)
-    assert (scored.iloc[0]["exposure_score"], scored.iloc[0]["exposure_band"]) == (26, "Low")
-    assert governed.evaluate_insider_trading(**frames).empty
+    frames = _frames([_row("T-BET", 10000, 500, 30, 1, 10000, 6000), WORKED])  # alerting control
+    scored = governed.score_all(**frames).set_index("subject_entity_id")
+    assert len(scored) == 2
+    assert (scored.loc["T-BET", "exposure_score"], scored.loc["T-BET", "exposure_band"]) == (26, "Low")
+    assert list(governed.evaluate_insider_trading(**frames)["subject_entity_id"]) == ["T-WORKED"]
 
 
 def test_normal_coverage_contacts_alone_do_not_alert(governed):
     """Sheet near-miss: frequent contacts consistent with normal coverage
     relationships must not alert on that basis. Build 0.05 Low, 30 days Low,
     12 contacts Critical, profit 0.1 Low: 5.25+3.75+18+3 = 30 -> Medium."""
-    frames = _frames([_row("T-COVER", 10000, 500, 30, 12, 10000, 1000)])
-    scored = governed.score_all(**frames)
-    assert (scored.iloc[0]["exposure_score"], scored.iloc[0]["exposure_band"]) == (30, "Medium")
-    assert governed.evaluate_insider_trading(**frames).empty
+    frames = _frames([_row("T-COVER", 10000, 500, 30, 12, 10000, 1000), WORKED])  # alerting control
+    scored = governed.score_all(**frames).set_index("subject_entity_id")
+    assert len(scored) == 2
+    assert (scored.loc["T-COVER", "exposure_score"], scored.loc["T-COVER", "exposure_band"]) == (30, "Medium")
+    assert list(governed.evaluate_insider_trading(**frames)["subject_entity_id"]) == ["T-WORKED"]
 
 
 def test_background_normal_positions_far_from_any_event_score_fifteen(governed):
     """Sheet background: normal-size positions, no event proximity -> all Low = 15."""
-    frames = _frames([_row("T-BG", 10000, 100, 60, 0, 10000, 100)])
-    scored = governed.score_all(**frames)
-    assert (scored.iloc[0]["exposure_score"], scored.iloc[0]["exposure_band"]) == (15, "Low")
-    assert governed.evaluate_insider_trading(**frames).empty
+    frames = _frames([_row("T-BG", 10000, 100, 60, 0, 10000, 100), WORKED])  # alerting control
+    scored = governed.score_all(**frames).set_index("subject_entity_id")
+    assert len(scored) == 2
+    assert (scored.loc["T-BG", "exposure_score"], scored.loc["T-BG", "exposure_band"]) == (15, "Low")
+    assert list(governed.evaluate_insider_trading(**frames)["subject_entity_id"]) == ["T-WORKED"]
 
 
 def test_the_alert_set_is_exactly_the_rows_at_or_above_eighty(governed):
@@ -321,7 +325,7 @@ def test_the_callable_refuses_a_row_with_a_missing_required_input(governed, colu
         governed.score_all(**_frames([row]))
 
 
-@pytest.mark.xfail(strict=True, reason=(
+@pytest.mark.xfail(strict=True, raises=pytest.fail.Exception, reason=(
     "DEFECT: doctrine 'Both amounts REQUIRED' (CM001_Insider_Trading.md:114) -- a NaN "
     "pre_event_position_increase is banded Critical, not refused (cm001_risk_model.py:55-61, 73-84: "
     "_require checks only `is None`; NaN fails every `r <` test). Sibling: CM003 D1"))
@@ -330,7 +334,7 @@ def test_a_nan_position_increase_is_refused_not_banded():
         score_pre_event_position_build(float("nan"), 10000)
 
 
-@pytest.mark.xfail(strict=True, reason=(
+@pytest.mark.xfail(strict=True, raises=pytest.fail.Exception, reason=(
     "DEFECT: doctrine 'Both amounts REQUIRED' (CM001_Insider_Trading.md:114) -- a NaN "
     "normal_average_position is banded Critical, not refused (cm001_risk_model.py:55-61, 74-84: "
     "the `normal <= 0` guard is False for NaN). Sibling: CM003 D1"))
@@ -339,7 +343,7 @@ def test_a_nan_normal_position_is_refused_not_banded():
         score_pre_event_position_build(1000, float("nan"))
 
 
-@pytest.mark.xfail(strict=True, reason=(
+@pytest.mark.xfail(strict=True, raises=pytest.fail.Exception, reason=(
     "DEFECT: doctrine 'Both amounts REQUIRED' (CM001_Insider_Trading.md:127) -- a NaN realized_pnl "
     "is banded Critical, not refused (cm001_risk_model.py:55-61, 117-128). Sibling: CM003 D1"))
 def test_a_nan_realised_pnl_is_refused_not_banded():
@@ -347,7 +351,7 @@ def test_a_nan_realised_pnl_is_refused_not_banded():
         score_profit_realisation(float("nan"), 10000)
 
 
-@pytest.mark.xfail(strict=True, reason=(
+@pytest.mark.xfail(strict=True, raises=pytest.fail.Exception, reason=(
     "DEFECT: doctrine 'Both amounts REQUIRED' (CM001_Insider_Trading.md:127) -- a NaN "
     "position_value_at_entry is banded Critical, not refused (cm001_risk_model.py:55-61, 118-128: "
     "the `value <= 0` guard is False for NaN). Sibling: CM003 D1"))

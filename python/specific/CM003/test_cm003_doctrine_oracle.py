@@ -224,28 +224,31 @@ def test_market_maker_near_miss_does_not_alert(governed):
     """Sheet near-miss: genuine two-sided liquidity provision. A small non-bona-fide
     share (r=0.05 Low), slow cancels (30 s Low), balanced depth (r=0.5 High) and
     fills a fifth of the cancelled value (r=0.2 Low): 5.25+3.75+14+3 = 26 -> Low."""
-    frames = _frames([_row("T-MM", 1000000, 50000, 30.0, 5000, 5000, 10000)])
-    scored = governed.score_all(**frames)
-    assert (scored.iloc[0]["exposure_score"], scored.iloc[0]["exposure_band"]) == (26, "Low")
-    assert governed.evaluate_spoofing(**frames).empty
+    frames = _frames([_row("T-MM", 1000000, 50000, 30.0, 5000, 5000, 10000), WORKED])  # alerting control
+    scored = governed.score_all(**frames).set_index("subject_entity_id")
+    assert len(scored) == 2
+    assert (scored.loc["T-MM", "exposure_score"], scored.loc["T-MM", "exposure_band"]) == (26, "Low")
+    assert list(governed.evaluate_spoofing(**frames)["subject_entity_id"]) == ["T-WORKED"]
 
 
 def test_partial_pattern_fast_cancels_alone_does_not_alert(governed):
     """Sheet near-miss: fast cancels without opposite-side execution or depth
     imbalance. NBF Critical (0.9), speed Critical (0.5 s), imbalance Low (0.05),
     execution Low (0.0): 31.5+22.5+3+3 = 60 -> High, below 80."""
-    frames = _frames([_row("T-PART", 10000, 9000, 0.5, 500, 9500, 0)])
-    scored = governed.score_all(**frames)
-    assert (scored.iloc[0]["exposure_score"], scored.iloc[0]["exposure_band"]) == (60, "High")
-    assert governed.evaluate_spoofing(**frames).empty
+    frames = _frames([_row("T-PART", 10000, 9000, 0.5, 500, 9500, 0), WORKED])  # alerting control
+    scored = governed.score_all(**frames).set_index("subject_entity_id")
+    assert len(scored) == 2
+    assert (scored.loc["T-PART", "exposure_score"], scored.loc["T-PART", "exposure_band"]) == (60, "High")
+    assert list(governed.evaluate_spoofing(**frames)["subject_entity_id"]) == ["T-WORKED"]
 
 
 def test_background_slow_normal_order_management_scores_fifteen(governed):
     """Sheet background: normal order management, cancels slower than 15 s -> all Low = 15."""
-    frames = _frames([_row("T-BG", 1000000, 10000, 45.0, 100, 9900, 0)])
-    scored = governed.score_all(**frames)
-    assert (scored.iloc[0]["exposure_score"], scored.iloc[0]["exposure_band"]) == (15, "Low")
-    assert governed.evaluate_spoofing(**frames).empty
+    frames = _frames([_row("T-BG", 1000000, 10000, 45.0, 100, 9900, 0), WORKED])  # alerting control
+    scored = governed.score_all(**frames).set_index("subject_entity_id")
+    assert len(scored) == 2
+    assert (scored.loc["T-BG", "exposure_score"], scored.loc["T-BG", "exposure_band"]) == (15, "Low")
+    assert list(governed.evaluate_spoofing(**frames)["subject_entity_id"]) == ["T-WORKED"]
 
 
 def test_the_alert_set_is_exactly_the_rows_at_or_above_eighty(governed):
@@ -284,7 +287,7 @@ def test_no_band_combination_scores_exactly_eighty():
 
 # ---------------------------------------------------------------- REQUIRED inputs (doctrine)
 
-@pytest.mark.xfail(strict=True, reason=(
+@pytest.mark.xfail(strict=True, raises=pytest.fail.Exception, reason=(
     "DEFECT: doctrine 'avg_cancel_seconds REQUIRED' (CM003_Spoofing.md:124) and the model's own "
     "'not measured is not slow to cancel' -- a NaN cancel speed is banded Low, not refused "
     "(cm003_risk_model.py:92-99: _require checks only `is None`)"))
@@ -293,7 +296,7 @@ def test_a_nan_cancel_speed_is_refused_not_banded():
         score_cancellation_speed(float("nan"))
 
 
-@pytest.mark.xfail(strict=True, reason=(
+@pytest.mark.xfail(strict=True, raises=pytest.fail.Exception, reason=(
     "DEFECT: doctrine 'Both amounts REQUIRED' (CM003_Spoofing.md:120) -- a NaN spoof_order_value "
     "is banded Critical, not refused (cm003_risk_model.py:74-85: _require checks only `is None`)"))
 def test_a_nan_order_value_is_refused_not_banded():
@@ -301,7 +304,7 @@ def test_a_nan_order_value_is_refused_not_banded():
         score_non_bona_fide_order_ratio(float("nan"), 10000)
 
 
-@pytest.mark.xfail(strict=True, reason=(
+@pytest.mark.xfail(strict=True, raises=pytest.fail.Exception, reason=(
     "DEFECT: doctrine 'avg_cancel_seconds REQUIRED' (CM003_Spoofing.md:124) -- through the callable "
     "a row whose cancel speed is missing (NaN in the frame) is scored with cancellation_speed Low "
     "instead of refused (spoofing.py:69 -> cm003_risk_model.py:92)"))

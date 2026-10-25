@@ -248,10 +248,11 @@ def test_ordinary_market_making_does_not_alert(governed):
     broad counterparty spread (>= 5), arm's-length ownership. Self-match 0.2
     Medium, overlap 10 Low, inflation 1.05 Low, 12 counterparties Low:
     15.75+3.75+3+3 = 25.5 -> 26 (half-up) Low."""
-    frames = _frames([_row("T-MM", 2000, 10000, 10, 10500, 10000, 12)])
-    scored = governed.score_all(**frames)
-    assert (scored.iloc[0]["exposure_score"], scored.iloc[0]["exposure_band"]) == (26, "Low")
-    assert governed.evaluate_wash_trading(**frames).empty
+    frames = _frames([_row("T-MM", 2000, 10000, 10, 10500, 10000, 12), WORKED])  # alerting control
+    scored = governed.score_all(**frames).set_index("subject_entity_id")
+    assert len(scored) == 2
+    assert (scored.loc["T-MM", "exposure_score"], scored.loc["T-MM", "exposure_band"]) == (26, "Low")
+    assert list(governed.evaluate_wash_trading(**frames)["subject_entity_id"]) == ["T-WORKED"]
 
 
 @pytest.mark.parametrize("matched,score", [(500, 30), (2000, 41), (4000, 49), (9000, 56)])
@@ -261,18 +262,20 @@ def test_concentration_without_overlap_or_inflation_does_not_alert(governed, mat
     self-match band, the doctrine total stays under 80: Low 5.25+24.75 = 30,
     Medium 15.75+24.75 = 40.5 -> 41, High 24.5+24.75 = 49.25 -> 49, Critical
     31.5+24.75 = 56.25 -> 56."""
-    frames = _frames([_row("T-PART", matched, 10000, 0, 10000, 10000, 1)])
-    scored = governed.score_all(**frames)
-    assert scored.iloc[0]["exposure_score"] == score
-    assert governed.evaluate_wash_trading(**frames).empty
+    frames = _frames([_row("T-PART", matched, 10000, 0, 10000, 10000, 1), WORKED])  # alerting control
+    scored = governed.score_all(**frames).set_index("subject_entity_id")
+    assert len(scored) == 2
+    assert scored.loc["T-PART", "exposure_score"] == score
+    assert list(governed.evaluate_wash_trading(**frames)["subject_entity_id"]) == ["T-WORKED"]
 
 
 def test_background_diverse_counterparties_no_self_match_scores_fifteen(governed):
     """Sheet background: diverse counterparties, no self-match -> all Low = 15."""
-    frames = _frames([_row("T-BG", 0, 10000, 0, 10000, 10000, 25)])
-    scored = governed.score_all(**frames)
-    assert (scored.iloc[0]["exposure_score"], scored.iloc[0]["exposure_band"]) == (15, "Low")
-    assert governed.evaluate_wash_trading(**frames).empty
+    frames = _frames([_row("T-BG", 0, 10000, 0, 10000, 10000, 25), WORKED])  # alerting control
+    scored = governed.score_all(**frames).set_index("subject_entity_id")
+    assert len(scored) == 2
+    assert (scored.loc["T-BG", "exposure_score"], scored.loc["T-BG", "exposure_band"]) == (15, "Low")
+    assert list(governed.evaluate_wash_trading(**frames)["subject_entity_id"]) == ["T-WORKED"]
 
 
 def test_the_alert_set_is_exactly_the_rows_at_or_above_eighty(governed):
@@ -318,7 +321,7 @@ def test_the_callable_refuses_a_row_with_a_missing_required_input(governed, colu
 
 @pytest.mark.parametrize("args", [(float("nan"), 100000), (90000, float("nan"))],
                          ids=["nan-self-matched", "nan-total"])
-@pytest.mark.xfail(strict=True, reason=(
+@pytest.mark.xfail(strict=True, raises=pytest.fail.Exception, reason=(
     "DEFECT: doctrine 'Both amounts REQUIRED' (CM005_Wash_Trading.md:120) -- a NaN self-match "
     "input is banded Critical, not refused (cm005_risk_model.py:60-65, 78-89: _require checks only "
     "`is None`; `total <= 0` is False for NaN and NaN fails every `r <` test). Siblings: CM001 D1, "
@@ -330,7 +333,7 @@ def test_a_nan_self_match_input_is_refused_not_banded(args):
 
 @pytest.mark.parametrize("args", [(float("nan"), 10000), (30000, float("nan"))],
                          ids=["nan-reported", "nan-genuine"])
-@pytest.mark.xfail(strict=True, reason=(
+@pytest.mark.xfail(strict=True, raises=pytest.fail.Exception, reason=(
     "DEFECT: doctrine 'Both amounts REQUIRED' (CM005_Wash_Trading.md:129) -- a NaN volume-inflation "
     "input is banded Critical, not refused (cm005_risk_model.py:60-65, 108-119: _require checks only "
     "`is None`; `genuine <= 0` is False for NaN). Siblings: CM001 D1, CM003 D1, BA001, BA004, "
