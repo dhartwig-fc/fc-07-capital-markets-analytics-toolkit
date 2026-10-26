@@ -334,7 +334,9 @@ def test_a_nan_impact_transfer_is_refused_not_alerted(governed):
 # ---------------------------------------------------------------- DEFECT: percentage truncated before the cut
 
 @pytest.mark.xfail(strict=True, raises=AssertionError, reason=(
-    "DEFECT: T:122 bands correlation_pct '<= 85 -> High, otherwise (> 85) -> Critical' (and "
+    "QUESTION (doctrine T:122 vs fc-07 schema.json integer typing, rule 9): "
+    "Measured: AssertionError: assert ('High', 'Medium', 'Low') == ('Critical', 'High', "
+    "'Medium'). T:122 bands correlation_pct '<= 85 -> High, otherwise (> 85) -> Critical' (and "
     "'<= 40', '<= 65'); cm008_risk_model.py:74 truncates the percentage with int(float(...)) "
     "before comparing, so 85.5% is High, 65.5% Medium and 40.5% Low. Measured through the "
     "callable: 85.5% with 3 venues (H), 0.85 transferred (C) and 10 s (H) scores 74 High and "

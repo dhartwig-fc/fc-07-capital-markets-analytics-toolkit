@@ -352,7 +352,9 @@ def test_a_nan_price_move_is_refused_not_alerted(governed):
 # ---------------------------------------------------------------- DEFECT: share truncated before the cut
 
 @pytest.mark.xfail(strict=True, raises=AssertionError, reason=(
-    "DEFECT: doctrine :120 bands pct_of_market_volume '<= 45 -> High, otherwise (> 45) -> "
+    "QUESTION (doctrine T:120 vs fc-07 schema.json integer typing, rule 9): "
+    "Measured: AssertionError: assert ('High', 'Low') == ('Critical', 'Medium'). "
+    "Doctrine :120 bands pct_of_market_volume '<= 45 -> High, otherwise (> 45) -> "
     "Critical' (and '<= 10 -> Low'); cm002_risk_model.py:92 truncates the share with "
     "int(float(...)) before comparing, so 45.5% is High and 10.5% is Low. Measured through the "
     "callable: a 45.5% share with price impact High (r 4) and the rest Critical scores 78 High "

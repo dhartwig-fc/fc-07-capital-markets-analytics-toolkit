@@ -301,7 +301,10 @@ def test_escalation_is_at_or_above_eighty(governed, monkeypatch, forced, alerts)
 
 
 @pytest.mark.xfail(strict=True, raises=AssertionError, reason=(
-    "DEFECT: T:135 'seconds_before_fixing_close <= 5 -> Critical, <= 20 -> High' -- an order "
+    "QUESTION (doctrine T:135 vs fc-07 schema.json integer typing, rule 9): "
+    "Measured: AssertionError: assert 'Critical' == 'High'. Truncation produces a FALSE "
+    "ALERT. (schema.json types seconds_before_fixing_close 'integer'; T does not.) "
+    "T:135 'seconds_before_fixing_close <= 5 -> Critical, <= 20 -> High' -- an order "
     "5.5 s before the close is not <= 5, but cm009_risk_model.py:108 truncates with "
     "int(float(...)) before the cut-line, so it bands Critical. Measured: AssertionError, the "
     "row scores 83 Critical and ALERTS where the doctrine gives High 14 -> 79 High, no alert"))
