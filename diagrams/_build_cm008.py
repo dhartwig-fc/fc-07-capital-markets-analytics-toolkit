@@ -19,7 +19,7 @@ SPEC = DiagramSpec(
         DataGroup("INSTRUMENT REFERENCE DATA", ["Issuer identifiers", "Corporate actions", "Listing history", "Product relationship type"]),
         DataGroup("OPEN SOURCE INTELLIGENCE", ["Adverse media", "Investigative reports", "Commercial databases"]),
     ],
-    subject_label="TRADING ACCOUNT", subject_name="Natasha Ivanova &#183; ACC019",
+    subject_label="TRADING ACCOUNT", subject_name="Natasha Ivybristlea &#183; ACC019",
     subject_context="Cross-Venue Correlated Position", bridge_entity="Zeta Commodities Ltd",
     score=90, band="CRITICAL",
     components=[

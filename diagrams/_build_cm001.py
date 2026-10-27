@@ -19,13 +19,13 @@ SPEC = DiagramSpec(
         DataGroup("CORPORATE REGISTRY DATA", ["Issuer ownership &amp; control", "Director &amp; officer records", "Beneficial ownership"]),
         DataGroup("OPEN SOURCE INTELLIGENCE", ["Adverse media", "Investigative reports", "Commercial databases"]),
     ],
-    subject_label="TRADING ACCOUNT", subject_name="Viktor Sokolov &#183; ACC019",
-    subject_context="Special Situations Desk", bridge_entity="Gamma Imports Ltd",
+    subject_label="TRADING ACCOUNT", subject_name="Viktor Flintquill &#183; ACC019",
+    subject_context="Special Situations Desk", bridge_entity="Gammavane Imports Ltd",
     score=90, band="CRITICAL",
     components=[
         Component("Pre-Event Position Build", "39,600 of 60,000 normal position (r=0.660)", "Critical", 35),
         Component("Timing Proximity to Event", "Position built 0 days before the event", "Critical", 25),
-        Component("Information Access Linkage", "10 contact events with the Gamma Imports Ltd Head of IR", "Critical", 20),
+        Component("Information Access Linkage", "10 contact events with the Gammavane Imports Ltd Head of IR", "Critical", 20),
         Component("Profit Realisation", "$2,090,400 realised on $2,400,000 entry (r=0.871)", "Critical", 20),
     ],
     risk_rationale=[

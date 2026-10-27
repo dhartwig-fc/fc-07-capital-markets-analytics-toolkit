@@ -138,7 +138,7 @@ venues. Fewer seconds between the trades is worse.
 
 ---
 
-# Example Exposure Score — ACC019 Natasha Ivanova
+# Example Exposure Score — ACC019 Natasha Ivybristlea
 
 | Component | Evidence | Band |
 |------------|----------|------|
@@ -206,7 +206,7 @@ alerts = suspect[suspect["exposure_score"] >= 80]
 # Investigator Outcome
 
 ```text
-Trader:                Natasha Ivanova — ACC019
+Trader:                Natasha Ivybristlea — ACC019
 Primary Instrument:    Zeta Commodities Ltd Ordinary Shares
 Correlated Instrument: Zeta Commodities Ltd Single-Stock Futures
 Cross-Venue Correlation: 97% (r-equivalent Critical)

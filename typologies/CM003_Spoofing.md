@@ -137,7 +137,7 @@ genuine execution happens on the opposite side while spoofing.
 
 ---
 
-# Example Exposure Score — ACC019 Viktor Sokolov
+# Example Exposure Score — ACC019 Viktor Flintquill
 
 | Component | Evidence | Band |
 |------------|----------|------|
@@ -202,7 +202,7 @@ alerts = suspect[suspect["exposure_score"] >= 80]
 # Investigator Outcome
 
 ```text
-Trader:                Viktor Sokolov — ACC019
+Trader:                Viktor Flintquill — ACC019
 Instrument:            Zeta Commodities Ltd Ordinary Shares
 Broker:                Zeta Commodities Ltd
 Total Order Value:     $2,400,000

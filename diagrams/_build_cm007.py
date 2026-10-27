@@ -19,8 +19,8 @@ SPEC = DiagramSpec(
         DataGroup("INSTRUMENT REFERENCE DATA", ["Free-float &amp; share structure", "Listing venue &amp; tier", "Issuer disclosures", "Market-cap tier"]),
         DataGroup("OPEN SOURCE INTELLIGENCE", ["Adverse media", "Investigative reports", "Commercial databases"]),
     ],
-    subject_label="TRADING ACCOUNT", subject_name="Desmond Clarke &#183; ACC019",
-    subject_context="Corvus Aerospace Inc", bridge_entity="John Smith (P001)",
+    subject_label="TRADING ACCOUNT", subject_name="Desmond Vellummote &#183; ACC019",
+    subject_context="Corvus Aerospace Inc", bridge_entity="John Cloverspindle (P001)",
     score=90, band="CRITICAL",
     components=[
         Component("Accumulation Concentration", "68% of the free float accumulated pre-promotion", "Critical", 35),

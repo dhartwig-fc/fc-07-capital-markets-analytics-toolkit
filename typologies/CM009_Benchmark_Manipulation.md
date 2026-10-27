@@ -140,7 +140,7 @@ Band-midpoints 15/45/70/90, weighted sum, half-up, boundary at 80.
 
 ---
 
-# Example Exposure Score — ACC019 Sergei Ivanov
+# Example Exposure Score — ACC019 Sergei Ivybristle
 
 | Component | Evidence | Band |
 |------------|----------|------|
@@ -205,9 +205,9 @@ alerts = suspect[suspect["exposure_score"] >= 80]
 # Investigator Outcome
 
 ```text
-Trader:                Sergei Ivanov — ACC019
+Trader:                Sergei Ivybristle — ACC019
 Benchmark:              ICE LIBOR-style USD Reference Rate Fixing
-Issuer of Record:      Gamma Imports Ltd
+Issuer of Record:      Gammavane Imports Ltd
 Fixing Window Volume:  22,525,000 of 26,500,000 total daily volume (r = 0.850)
 Price Distortion:      1.44% fixing deviation vs 0.18% normal (r = 8.00)
 Order Timing:          Placed 2 seconds before the fixing window's close

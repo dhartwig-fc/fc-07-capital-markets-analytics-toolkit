@@ -6,7 +6,7 @@ Northwind Freight Co,ACC004,Eurex,Germany,Single-stock futures,0
 Ravenwood Trading Co,ACC005,CMC Markets CFD Venue,United Kingdom,Contract for Difference (CFD),1
 Alpha Trading Ltd,ACC006,Chicago Board Options Exchange,United States,Exchange-traded options,0
 Meridian Bulk Traders Ltd,ACC007,Eurex,Germany,Single-stock futures,1
-Gamma Imports Ltd,ACC008,Over-the-Counter Swap Venue,Marshall Islands,Total return swap,1
+Gammavane Imports Ltd,ACC008,Over-the-Counter Swap Venue,Marshall Islands,Total return swap,1
 Falcon Ridge Commodities Ltd,ACC009,CMC Markets CFD Venue,United Kingdom,Contract for Difference (CFD),1
 Highgate Commodities Ltd,ACC010,ICE Futures Europe,United Kingdom,Single-stock futures,2
 Alpha Trading Ltd,ACC011,NYSE Arca,United States,American Depositary Receipt (ADR),1
@@ -14,7 +14,7 @@ Continental Correspondent Bank,ACC012,Euronext Paris,France,Cross-listed ordinar
 Northwind Freight Co,ACC013,Eurex,Germany,Single-stock futures,1
 Ravenwood Trading Co,ACC014,CMC Markets CFD Venue,United Kingdom,Contract for Difference (CFD),2
 Meridian Bulk Traders Ltd,ACC015,Chicago Board Options Exchange,United States,Exchange-traded options,2
-Gamma Imports Ltd,ACC016,Over-the-Counter Swap Venue,Marshall Islands,Total return swap,2
+Gammavane Imports Ltd,ACC016,Over-the-Counter Swap Venue,Marshall Islands,Total return swap,2
 Falcon Ridge Commodities Ltd,ACC017,ICE Futures Europe,United Kingdom,Single-stock futures,2
 Highgate Commodities Ltd,ACC018,NYSE Arca,United States,American Depositary Receipt (ADR),2
 Zeta Commodities Ltd,ACC019,ICE Futures Europe,Cyprus,Single-stock futures,3

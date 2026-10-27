@@ -1,23 +1,23 @@
 trader_name,account_ref,desk,issuer_name,normal_average_position,pre_event_position_increase,days_before_event,contact_events_90d,position_value_at_entry,realized_pnl,information_source_name
-Elena Marchetti,ACC001,Convertibles Desk,Falcon Ridge Commodities Ltd,55000,3520,20,2,1500000,232500,Julia Costa (Sell-Side Research)
-Bjorn Kallstrom,ACC002,Special Situations Desk,Highgate Commodities Ltd,50000,3800,11,2,1500000,528000,Anders Berg (Corporate Access Desk)
-Priya Chandrasekaran,ACC003,Equities Prop Desk,Continental Correspondent Bank,60000,2160,10,4,1800000,318600,Anders Berg (Corporate Access Desk)
-Tomás Reyes,ACC004,Event-Driven Desk,Northwind Freight Co,65000,5720,7,0,2400000,319200,Anders Berg (Corporate Access Desk)
-Wei Zhang,ACC005,Equities Prop Desk,Ravenwood Trading Co,45000,5715,12,1,3000000,594000,Helena Voss (Independent Consultant)
-Aoife Byrne,ACC006,Event-Driven Desk,Alpha Trading Ltd,45000,2565,14,3,2700000,926100,Karim Idris (Prime Brokerage Contact)
-Sven Lindberg,ACC007,Equity Derivatives Desk,Northwind Freight Co,50000,10250,5,0,2700000,321300,Nils Petterson (Investor Relations Contact)
-Camille Dubois,ACC008,Event-Driven Desk,Alpha Trading Ltd,50000,12750,4,3,2100000,363300,"Sofia Lindqvist (Gamma Imports Ltd, Finance Director)"
-Kenji Watanabe,ACC009,Convertibles Desk,Meridian Bulk Traders Ltd,55000,14630,6,3,2700000,1055700,Helena Voss (Independent Consultant)
-Nadia Farouk,ACC010,Special Situations Desk,Meridian Bulk Traders Ltd,55000,7810,6,9,1800000,333000,"Ruben Almeida (Legal Counsel, Gamma Imports Ltd)"
-Lucas Ferreira,ACC011,Convertibles Desk,Alpha Trading Ltd,45000,15480,9,3,3000000,918000,"Marcus Webb (Gamma Imports Ltd, Head of IR)"
-Ingrid Solberg,ACC012,Equities Prop Desk,Alpha Trading Ltd,60000,10860,3,5,3000000,264000,Helena Voss (Independent Consultant)
-Rashid Al-Mansoori,ACC013,Equities Prop Desk,Falcon Ridge Commodities Ltd,45000,39330,1,0,2100000,197400,Karim Idris (Prime Brokerage Contact)
-Beatrix Hofmann,ACC014,Equity Derivatives Desk,Northwind Freight Co,65000,51220,2,5,2400000,228000,Karim Idris (Prime Brokerage Contact)
-Diego Alvarez,ACC015,Equities Prop Desk,Highgate Commodities Ltd,55000,22935,2,6,1200000,458400,Helena Voss (Independent Consultant)
-Mei-Ling Tan,ACC016,Convertibles Desk,Alpha Trading Ltd,40000,27960,0,5,2700000,518400,Karim Idris (Prime Brokerage Contact)
-Oskar Nowak,ACC017,Equity Derivatives Desk,Ravenwood Trading Co,60000,21180,3,14,3000000,924000,"Sofia Lindqvist (Gamma Imports Ltd, Finance Director)"
-Layla Haddad,ACC018,Event-Driven Desk,Continental Correspondent Bank,65000,60255,2,8,2700000,939600,"Ruben Almeida (Legal Counsel, Gamma Imports Ltd)"
-Viktor Sokolov,ACC019,Special Situations Desk,Gamma Imports Ltd,60000,39600,0,10,2400000,2090400,"Marcus Webb (Gamma Imports Ltd, Head of IR)"
-Charlotte Whitfield,ACC020,Equities Prop Desk,Zeta Commodities Ltd,40000,32560,2,10,1500000,1038000,Nils Petterson (Investor Relations Contact)
-Amara Nwosu,ACC021,Special Situations Desk,Continental Correspondent Bank,45000,15210,0,12,2400000,2208000,"Sofia Lindqvist (Gamma Imports Ltd, Finance Director)"
-Hiroshi Sato,ACC022,Event-Driven Desk,Ravenwood Trading Co,65000,57135,3,11,2100000,1751400,"Marcus Webb (Gamma Imports Ltd, Head of IR)"
+Elena Sorrelkettle,ACC001,Convertibles Desk,Falcon Ridge Commodities Ltd,55000,3520,20,2,1500000,232500,Julia Puddlebutton (Sell-Side Research)
+Bjorn Saltmote,ACC002,Special Situations Desk,Highgate Commodities Ltd,50000,3800,11,2,1500000,528000,Anders Willowquill (Corporate Access Desk)
+Priya Brindlebristle,ACC003,Equities Prop Desk,Continental Correspondent Bank,60000,2160,10,4,1800000,318600,Anders Willowquill (Corporate Access Desk)
+Tomás Saltquill,ACC004,Event-Driven Desk,Northwind Freight Co,65000,5720,7,0,2400000,319200,Anders Willowquill (Corporate Access Desk)
+Wei Juniperkettle,ACC005,Equities Prop Desk,Ravenwood Trading Co,45000,5715,12,1,3000000,594000,Helena Parsleybristle (Independent Consultant)
+Aoife Larchmote,ACC006,Event-Driven Desk,Alpha Trading Ltd,45000,2565,14,3,2700000,926100,Karim Nettlemote (Prime Brokerage Contact)
+Sven Duskwhistle,ACC007,Equity Derivatives Desk,Northwind Freight Co,50000,10250,5,0,2700000,321300,Nils Pebblecrumb (Investor Relations Contact)
+Camille Wrentumble,ACC008,Event-Driven Desk,Alpha Trading Ltd,50000,12750,4,3,2100000,363300,"Sofia Lindqvist (Gammavane Imports Ltd, Finance Director)"
+Kenji Cloverthimble,ACC009,Convertibles Desk,Meridian Bulk Traders Ltd,55000,14630,6,3,2700000,1055700,Helena Parsleybristle (Independent Consultant)
+Nadia Mossbristle,ACC010,Special Situations Desk,Meridian Bulk Traders Ltd,55000,7810,6,9,1800000,333000,"Ruben Almeida (Legal Counsel, Gammavane Imports Ltd)"
+Lucas Umberthimble,ACC011,Convertibles Desk,Alpha Trading Ltd,45000,15480,9,3,3000000,918000,"Marcus Larchbutton (Gammavane Imports Ltd, Head of IR)"
+Ingrid Hazelwisp,ACC012,Equities Prop Desk,Alpha Trading Ltd,60000,10860,3,5,3000000,264000,Helena Parsleybristle (Independent Consultant)
+Rashid Gorsetumble,ACC013,Equities Prop Desk,Falcon Ridge Commodities Ltd,45000,39330,1,0,2100000,197400,Karim Nettlemote (Prime Brokerage Contact)
+Beatrix Hazelmote,ACC014,Equity Derivatives Desk,Northwind Freight Co,65000,51220,2,5,2400000,228000,Karim Nettlemote (Prime Brokerage Contact)
+Diego Rushcrumb,ACC015,Equities Prop Desk,Highgate Commodities Ltd,55000,22935,2,6,1200000,458400,Helena Parsleybristle (Independent Consultant)
+Mei-Ling Gorsecrumb,ACC016,Convertibles Desk,Alpha Trading Ltd,40000,27960,0,5,2700000,518400,Karim Nettlemote (Prime Brokerage Contact)
+Oskar Umbercrumb,ACC017,Equity Derivatives Desk,Ravenwood Trading Co,60000,21180,3,14,3000000,924000,"Sofia Lindqvist (Gammavane Imports Ltd, Finance Director)"
+Layla Quillbristle,ACC018,Event-Driven Desk,Continental Correspondent Bank,65000,60255,2,8,2700000,939600,"Ruben Almeida (Legal Counsel, Gammavane Imports Ltd)"
+Viktor Flintquill,ACC019,Special Situations Desk,Gammavane Imports Ltd,60000,39600,0,10,2400000,2090400,"Marcus Larchbutton (Gammavane Imports Ltd, Head of IR)"
+Charlotte Gorsewhistle,ACC020,Equities Prop Desk,Zeta Commodities Ltd,40000,32560,2,10,1500000,1038000,Nils Pebblecrumb (Investor Relations Contact)
+Amara Sorrelthimble,ACC021,Special Situations Desk,Continental Correspondent Bank,45000,15210,0,12,2400000,2208000,"Sofia Lindqvist (Gammavane Imports Ltd, Finance Director)"
+Hiroshi Juniperwhistle,ACC022,Event-Driven Desk,Ravenwood Trading Co,65000,57135,3,11,2100000,1751400,"Marcus Larchbutton (Gammavane Imports Ltd, Head of IR)"

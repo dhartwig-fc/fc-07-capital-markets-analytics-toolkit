@@ -137,7 +137,7 @@ book has moved. Smaller is WORSE.
 
 ---
 
-# Example Exposure Score — ACC019 Renata Silva
+# Example Exposure Score — ACC019 Renata Quillmote
 
 | Component | Evidence | Band |
 |------------|----------|------|
@@ -202,9 +202,9 @@ alerts = suspect[suspect["exposure_score"] >= 80]
 # Investigator Outcome
 
 ```text
-Trader:                Renata Silva — ACC019
-Instrument:            Gamma Imports Ltd 4.5% 2029 Conv Bond
-Venue Operator:        Gamma Imports Ltd
+Trader:                Renata Quillmote — ACC019
+Instrument:            Gammavane Imports Ltd 4.5% 2029 Conv Bond
+Venue Operator:        Gammavane Imports Ltd
 Distinct Price Levels: 10
 Orders Placed / Executed: 300 / 5 (r = 60.0)
 Book Imbalance Created: 0.75

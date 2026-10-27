@@ -130,7 +130,7 @@ CM001–CM010:
    as BA001's commit message documents.
 6. Extend `tests/stage523_the_canonical_entity_join/test_the_canonical_join.py`'s
    parametrised case list with the new CM0NN fuse (see the `# BA001 (fc-06
-   Correspondent Banking) fuses through Gamma Imports Ltd, same entity as` comment
+   Correspondent Banking) fuses through Gammavane Imports Ltd, same entity as` comment
    already in that file for the exact shape to copy).
 7. Run `tools/check_baseline.sh` cold, MEASURE the new collected/passed numbers
    (never estimate them), and re-pin with an audit line in the same style as the
@@ -141,7 +141,7 @@ CM001–CM010:
 (`runtime/manufacturing/investigations/inv008.yaml`,
 `.../records/INV008_investigation_record.yaml`,
 `.../master_cases/INV008_master_case.yaml`, and `runtime/manufacturing/fusion/`).
-Because CM001/CM004/CM009 all bridge onto **Gamma Imports Ltd** and CM002/CM006/CM010
+Because CM001/CM004/CM009 all bridge onto **Gammavane Imports Ltd** and CM002/CM006/CM010
 all bridge onto **Alpha Trading Ltd**, either entity gives a same-repo, multi-typology
 fusion for free once 2+ of those typologies are registered — no new bridging work
 needed, just point the investigation factory at the entity the way INV008 does.

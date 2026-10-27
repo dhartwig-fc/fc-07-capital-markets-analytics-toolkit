@@ -1,23 +1,23 @@
 trader_name,account_ref,benchmark_name,fixing_window_volume,total_daily_volume,fixing_price_deviation_pct,normal_deviation_pct,seconds_before_fixing_close,repeat_occurrences,issuer_name
-Marta Kowalski,ACC001,SONIA 3-Month Fixing,1680000,42000000,0.2,0.2,120,0,Alpha Trading Ltd
-Dmitri Volkov,ACC002,EURIBOR 3-Month Fixing,2310000,38500000,0.225,0.25,95,2,Zeta Commodities Ltd
-Fatima Al-Rashid,ACC003,WM/Reuters 4pm London Fix (GBP/USD),2550000,51000000,0.198,0.18,40,1,Continental Correspondent Bank
-Connor Doyle,ACC004,LBMA Gold Price PM Fixing,2384000,29800000,0.396,0.22,150,0,Ravenwood Trading Co
-Ines Alves,ACC005,ICE Brent Crude Settlement Fixing,7095000,47300000,0.36,0.3,110,1,Falcon Ridge Commodities Ltd
-Haruto Nakamura,ACC006,SOFR Overnight Fixing,2352000,33600000,0.15,0.15,35,2,Highgate Commodities Ltd
-Isabela Santos,ACC007,Platts Dated Brent Assessment,8262000,45900000,0.4,0.2,130,0,Northwind Freight Co
-Karl Fischer,ACC008,LME Copper Official Settlement,11528000,52400000,0.414,0.18,45,1,Meridian Bulk Traders Ltd
-Noor Haidari,ACC009,SONIA 3-Month Fixing,9175000,36700000,0.475,0.25,50,2,Alpha Trading Ltd
-Liu Wei,ACC010,EURIBOR 3-Month Fixing,8240000,41200000,0.4,0.16,15,1,Zeta Commodities Ltd
-Petra Novakova,ACC011,WM/Reuters 4pm London Fix (EUR/USD),10982000,28900000,0.238,0.28,30,2,Continental Correspondent Bank
-Samuel Osei,ACC012,LBMA Gold Price PM Fixing,12015000,44500000,0.76,0.2,55,0,Ravenwood Trading Co
-Yuki Tanaka,ACC013,ICE Brent Crude Settlement Fixing,20670000,31800000,1.05,0.15,170,1,Falcon Ridge Commodities Ltd
-Anton Petrov,ACC014,SOFR Overnight Fixing,27720000,39600000,0.924,0.22,42,0,Highgate Commodities Ltd
-Chiara Romano,ACC015,Platts Dated Brent Assessment,21690000,48200000,0.864,0.18,12,2,Northwind Freight Co
-Rajesh Kumar,ACC016,LME Copper Official Settlement,20475000,27300000,1.5,0.2,38,1,Meridian Bulk Traders Ltd
-Greta Lindqvist,ACC017,SONIA 3-Month Fixing,22724000,43700000,1.2,0.24,4,2,Alpha Trading Ltd
-Mateus Silva,ACC018,EURIBOR 3-Month Fixing,28720000,35900000,0.832,0.16,10,2,Zeta Commodities Ltd
-Sergei Ivanov,ACC019,ICE LIBOR-style USD Reference Rate Fixing,22525000,26500000,1.44,0.18,2,8,Gamma Imports Ltd
-Ana Ferreira,ACC020,WM/Reuters 4pm London Fix (GBP/USD),35856000,49800000,0.99,0.22,3,4,Continental Correspondent Bank
-Tobias Richter,ACC021,LBMA Gold Price PM Fixing,17820000,32400000,1.17,0.15,1,7,Ravenwood Trading Co
-Naledi Dube,ACC022,ICE Brent Crude Settlement Fixing,32648000,37100000,1.06,0.2,5,6,Falcon Ridge Commodities Ltd
+Marta Rushquill,ACC001,SONIA 3-Month Fixing,1680000,42000000,0.2,0.2,120,0,Alpha Trading Ltd
+Dmitri Brackencrumb,ACC002,EURIBOR 3-Month Fixing,2310000,38500000,0.225,0.25,95,2,Zeta Commodities Ltd
+Fatima Brindlecrumb,ACC003,WM/Reuters 4pm London Fix (GBP/USD),2550000,51000000,0.198,0.18,40,1,Continental Correspondent Bank
+Connor Gossamerfiddle,ACC004,LBMA Gold Price PM Fixing,2384000,29800000,0.396,0.22,150,0,Ravenwood Trading Co
+Ines Thistlewhistle,ACC005,ICE Brent Crude Settlement Fixing,7095000,47300000,0.36,0.3,110,1,Falcon Ridge Commodities Ltd
+Haruto Brindlekettle,ACC006,SOFR Overnight Fixing,2352000,33600000,0.15,0.15,35,2,Highgate Commodities Ltd
+Isabela Wrenbutton,ACC007,Platts Dated Brent Assessment,8262000,45900000,0.4,0.2,130,0,Northwind Freight Co
+Karl Gorsebutton,ACC008,LME Copper Official Settlement,11528000,52400000,0.414,0.18,45,1,Meridian Bulk Traders Ltd
+Noor Copperbristle,ACC009,SONIA 3-Month Fixing,9175000,36700000,0.475,0.25,50,2,Alpha Trading Ltd
+Liu Mossthimble,ACC010,EURIBOR 3-Month Fixing,8240000,41200000,0.4,0.16,15,1,Zeta Commodities Ltd
+Petra Saltthimblea,ACC011,WM/Reuters 4pm London Fix (EUR/USD),10982000,28900000,0.238,0.28,30,2,Continental Correspondent Bank
+Samuel Kettlewhistle,ACC012,LBMA Gold Price PM Fixing,12015000,44500000,0.76,0.2,55,0,Ravenwood Trading Co
+Yuki Tallowwhistle,ACC013,ICE Brent Crude Settlement Fixing,20670000,31800000,1.05,0.15,170,1,Falcon Ridge Commodities Ltd
+Anton Mosstumble,ACC014,SOFR Overnight Fixing,27720000,39600000,0.924,0.22,42,0,Highgate Commodities Ltd
+Chiara Clovertumble,ACC015,Platts Dated Brent Assessment,21690000,48200000,0.864,0.18,12,2,Northwind Freight Co
+Rajesh Hollowwhistle,ACC016,LME Copper Official Settlement,20475000,27300000,1.5,0.2,38,1,Meridian Bulk Traders Ltd
+Greta Nettlewhistle,ACC017,SONIA 3-Month Fixing,22724000,43700000,1.2,0.24,4,2,Alpha Trading Ltd
+Mateus Quillmote,ACC018,EURIBOR 3-Month Fixing,28720000,35900000,0.832,0.16,10,2,Zeta Commodities Ltd
+Sergei Ivybristle,ACC019,ICE LIBOR-style USD Reference Rate Fixing,22525000,26500000,1.44,0.18,2,8,Gammavane Imports Ltd
+Ana Umberthimble,ACC020,WM/Reuters 4pm London Fix (GBP/USD),35856000,49800000,0.99,0.22,3,4,Continental Correspondent Bank
+Tobias Kettlebristle,ACC021,LBMA Gold Price PM Fixing,17820000,32400000,1.17,0.15,1,7,Ravenwood Trading Co
+Naledi Mossbutton,ACC022,ICE Brent Crude Settlement Fixing,32648000,37100000,1.06,0.2,5,6,Falcon Ridge Commodities Ltd

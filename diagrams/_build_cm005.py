@@ -19,7 +19,7 @@ SPEC = DiagramSpec(
         DataGroup("INSTRUMENT REFERENCE DATA", ["Instrument issuer &amp; class", "Venue execution data", "Price &amp; volume history", "Corporate actions"]),
         DataGroup("OPEN SOURCE INTELLIGENCE", ["Adverse media", "Investigative reports", "Commercial databases"]),
     ],
-    subject_label="TRADING ACCOUNT", subject_name="Grigor Andonov &#183; ACC019",
+    subject_label="TRADING ACCOUNT", subject_name="Grigor Puddlequill &#183; ACC019",
     subject_context="Continental Correspondent Bank Pref Shares", bridge_entity="Continental Correspondent Bank",
     score=90, band="CRITICAL",
     components=[

@@ -141,7 +141,7 @@ handling the client order in the 90 days before.
 
 ---
 
-# Example Exposure Score — ACC019 Vanessa Cole
+# Example Exposure Score — ACC019 Vanessa Thistlethimble
 
 | Component | Evidence | Band |
 |------------|----------|------|
@@ -209,7 +209,7 @@ alerts = suspect[suspect["exposure_score"] >= 80]
 # Investigator Outcome
 
 ```text
-Trader:                Vanessa Cole — ACC019
+Trader:                Vanessa Thistlethimble — ACC019
 Desk:                  Agency Execution Desk
 Client Firm:           Alpha Trading Ltd
 Timing Ahead of Client Order: 1 second before the client's order

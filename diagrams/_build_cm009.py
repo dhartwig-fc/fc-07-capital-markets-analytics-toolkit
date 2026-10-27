@@ -19,8 +19,8 @@ SPEC = DiagramSpec(
         DataGroup("ADMINISTRATOR / BENCHMARK DATA", ["Benchmark administrator", "Benchmark jurisdiction", "BMR compliance status", "Prior administrator alerts"]),
         DataGroup("OPEN SOURCE INTELLIGENCE", ["Adverse media", "Regulatory enforcement actions", "Commercial databases"]),
     ],
-    subject_label="TRADING ACCOUNT", subject_name="Sergei Ivanov &#183; ACC019",
-    subject_context="USD Reference Rate Fixing", bridge_entity="Gamma Imports Ltd",
+    subject_label="TRADING ACCOUNT", subject_name="Sergei Ivybristle &#183; ACC019",
+    subject_context="USD Reference Rate Fixing", bridge_entity="Gammavane Imports Ltd",
     score=90, band="CRITICAL",
     components=[
         Component("Fixing Window Concentration", "22,525,000 of 26,500,000 total volume (r=0.850)", "Critical", 35),

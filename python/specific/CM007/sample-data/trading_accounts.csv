@@ -1,23 +1,23 @@
 trader_name,account_ref,instrument,pct_of_float_accumulated,coordinated_posts_count,price_peak,price_baseline,volume_sold_to_retail,total_position,promoter_name,promoter_id
-Isabelle Laurent,ACC001,Solstice Biotech Corp,4,1,2.59,2.4,20000,200000,Renata Cruz,PR002
-Magnus Eriksson,ACC002,Kestrel Nano Materials Inc,6,2,3.57,3.1,82500,250000,Felix Brandt,PR003
-Fatima Al-Sayed,ACC003,Vantage Rare Earth Corp,3,0,2.61,1.8,24000,300000,Amara Okafor,PR004
-Connor O'Brien,ACC004,Pinnacle Graphene Ltd,7,4,4.7,4.2,27000,180000,Liu Wei,PR005
-Yuki Tanaka,ACC005,Auric Mining Ventures Inc,18,1,6.0,5.0,26400,220000,Sofia Kowalska,PR006
-Dimitri Volkov,ACC006,Cobalt Frontier Resources Inc,5,2,3.2,2.0,104000,260000,Trevor Nkosi,PR007
-Ana Beatriz Souza,ACC007,Nimbus Cloud Robotics Inc,20,3,4.13,3.5,36000,200000,Elif Kaya,PR008
-Piotr Nowicki,ACC008,Vertex Quantum Systems Inc,15,5,3.9,2.6,21600,240000,Bastian Hoffmann,PR009
-Leila Haidari,ACC009,Halcyon Biosciences Corp,22,4,4.95,3.0,98000,280000,Priya Nair,PR010
-Callum Reid,ACC010,Ironclad Defense Tech Inc,16,3,4.62,2.1,29400,210000,Aleksander Novak,PR011
-Sanjay Mehta,ACC011,Lumina Solar Dynamics Inc,32,2,6.2,4.0,90000,300000,Camila Torres,PR012
-Greta Lindqvist,ACC012,Cascade Hydrogen Corp,19,7,3.23,1.9,18200,260000,Ravi Shankar,PR013
-Marco Rinaldi,ACC013,Emberstone Mining Ltd,52,11,2.42,2.2,18000,300000,Ingrid Johansson,PR014
-Chioma Eze,ACC014,Sable Peak Resources Inc,55,8,2.24,1.6,29700,270000,Kwame Boateng,PR015
-Hendrik van der Berg,ACC015,Tundra Wave Energy Inc,36,9,3.12,1.3,95000,250000,Yasmin El-Sayed,PR016
-Soo-jin Park,ACC016,Zenith Micro Devices Inc,60,13,4.42,2.8,46400,290000,Dmitri Ivanov,PR017
-Alistair Cunningham,ACC017,Obsidian Data Systems Inc,40,6,3.96,1.1,130200,310000,Chiara Bianchi,PR018
-Valentina Moreno,ACC018,Wraith Cyber Security Inc,64,9,3.9,1.5,140800,320000,Hiroshi Endo,PR019
-Desmond Clarke,ACC019,Corvus Aerospace Inc,68,14,3.57,0.85,315000,350000,John Smith,P001
-Ingrid Halvorsen,ACC020,Aetherium Battery Corp,50,7,3.3,1.0,168000,280000,Freya Lindgren,PR020
-Tariq Farouk,ACC021,Driftwood Timber Holdings Inc,30,12,4.05,0.9,255000,300000,Omar Haddad,PR021
-Naomi Osei,ACC022,Palladian Robotics Inc,58,8,4.56,1.2,290400,330000,Bianca Silva,PR022
+Isabelle Puddlekettle,ACC001,Solstice Biotech Corp,4,1,2.59,2.4,20000,200000,Renata Brindlemote,PR002
+Magnus Yarrowkettle,ACC002,Kestrel Nano Materials Inc,6,2,3.57,3.1,82500,250000,Felix Umbertumble,PR003
+Fatima Umberwisp,ACC003,Vantage Rare Earth Corp,3,0,2.61,1.8,24000,300000,Amara Gossamerwhistle,PR004
+Connor Copperkettle,ACC004,Pinnacle Graphene Ltd,7,4,4.7,4.2,27000,180000,Liu Mossthimble,PR005
+Yuki Tallowwhistle,ACC005,Auric Mining Ventures Inc,18,1,6.0,5.0,26400,220000,Sofia Rushquilla,PR006
+Dimitri Brackencrumb,ACC006,Cobalt Frontier Resources Inc,5,2,3.2,2.0,104000,260000,Trevor Cinderkettle,PR007
+Ana Beatriz Cinderbutton,ACC007,Nimbus Cloud Robotics Inc,20,3,4.13,3.5,36000,200000,Elif Brindlefiddle,PR008
+Piotr Copperfiddle,ACC008,Vertex Quantum Systems Inc,15,5,3.9,2.6,21600,240000,Bastian Mosswisp,PR009
+Leila Copperbristle,ACC009,Halcyon Biosciences Corp,22,4,4.95,3.0,98000,280000,Priya Flintcrumb,PR010
+Callum Pebblebristle,ACC010,Ironclad Defense Tech Inc,16,3,4.62,2.1,29400,210000,Aleksander Parsleythimble,PR011
+Sanjay Hazeltumble,ACC011,Lumina Solar Dynamics Inc,32,2,6.2,4.0,90000,300000,Camila Yarrowcrumb,PR012
+Greta Nettlewhistle,ACC012,Cascade Hydrogen Corp,19,7,3.23,1.9,18200,260000,Ravi Hazelquill,PR013
+Marco Parsleycrumb,ACC013,Emberstone Mining Ltd,52,11,2.42,2.2,18000,300000,Ingrid Coppertumble,PR014
+Chioma Sorreltumble,ACC014,Sable Peak Resources Inc,55,8,2.24,1.6,29700,270000,Kwame Ashkettle,PR015
+Hendrik van der Berg,ACC015,Tundra Wave Energy Inc,36,9,3.12,1.3,95000,250000,Yasmin Gossamertumble,PR016
+Soo-jin Umberkettle,ACC016,Zenith Micro Devices Inc,60,13,4.42,2.8,46400,290000,Dmitri Ivybristle,PR017
+Alistair Gossamerkettle,ACC017,Obsidian Data Systems Inc,40,6,3.96,1.1,130200,310000,Chiara Thistlebristle,PR018
+Valentina Quillspindle,ACC018,Wraith Cyber Security Inc,64,9,3.9,1.5,140800,320000,Hiroshi Rushspindle,PR019
+Desmond Vellummote,ACC019,Corvus Aerospace Inc,68,14,3.57,0.85,315000,350000,John Cloverspindle,P001
+Ingrid Duskbristle,ACC020,Aetherium Battery Corp,50,7,3.3,1.0,168000,280000,Freya Vellumbutton,PR020
+Tariq Mossbristle,ACC021,Driftwood Timber Holdings Inc,30,12,4.05,0.9,255000,300000,Omar Quillbristle,PR021
+Naomi Kettlewhistle,ACC022,Palladian Robotics Inc,58,8,4.56,1.2,290400,330000,Bianca Quillmote,PR022
